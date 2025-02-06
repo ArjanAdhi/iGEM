@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block title %}Protocols{% endblock %}
+
+{% block page_content %}
+<!-- Banner Section -->
+<div class="data-banner">
+  <h1>Protocols</h1>
+</div>
+
+<!-- Left-hand Key for Sections -->
+<div class="data-key-container">
+  <ul class="data-section-key">
+    <li><a href="#section1">FSU iGEM Core Protocols</a></li>
+    <li><a href="#section2">Electrochemical Sensing of TMA via potentiostat</a></li>
+  </ul>
+</div>
+
+<!-- Main Content Area -->
+<div class="data-main-content">
+  
+  <section id="section1" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content1')">FSU iGEM Core Protocols</h2>
+    <div id="content1" class="data-content">
+      <div class="pdf-container">
+        <object data="https://static.igem.wiki/teams/5064/protocols-1-pdf.pdf#=125" type="application/pdf" width="100%" height="800px">
+          <p>Your browser requires that you <a href="https://static.igem.wiki/teams/5064/protocols-1-pdf.pdf">click on this link</a> to view the contents of this web page.</p>
+        </object>
+      </div>
+    </div>
+  </section>
+
+  <section id="section2" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content2')">Electrochemical Sensing of TMA Via Potentiostat</h2>
+    <div id="content2" class="data-content">
+      <div class="pdf-container">
+        <object data="https://static.igem.wiki/teams/5064/electrochemical-testing-protocol.pdf#=125" type="application/pdf" width="100%" height="800px">
+          <p>Your browser requires that you <a href="https://static.igem.wiki/teams/5064/electrochemical-testing-protocol.pdf">click on this link</a> to view the contents of this web page.</p>
+        </object>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}

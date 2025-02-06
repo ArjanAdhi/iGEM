@@ -1,0 +1,96 @@
+{% extends 'layout.html' %}
+
+{% block title %}Biological Parts{% endblock %}
+
+{% block page_content %}
+<!-- Banner Section -->
+<div class="data-banner">
+  <h1>Data Overview</h1>
+</div>
+
+<!-- Left-hand Key for Sections -->
+<div class="data-key-container">
+  <ul class="data-section-key">
+    <li><a href="#section1">BBa_K5064000 - M. aminisulfidivorans TMM</a></li>
+    <li><a href="#section2">BBa_K5064001 - M. aminisulfidivorans TMM II</a></li>
+    <li><a href="#section3">BBa_K5064002 - M. aminisulfidivorans TMM III</a></li>
+    <li><a href="#section4">BBa_K5064003 - Roseovarius sp. 217 TMM II</a></li>
+    <li><a href="#section5">BBa_K5064004 - M. aminisulfidivorans TMM Generator</a></li>
+    <li><a href="#section6">BBa_K5064005 - M. aminisulfidivorans TMM II Generator</a></li>
+    <li><a href="#section7">BBa_K5064006 - M. aminisulfidivorans TMM III Generator</a></li>
+    <li><a href="#section8">BBa_K5064007 - Roseovarius sp. 217 TMM II Generator</a></li>
+    <li><a href="#section9">BBa_K5064008 - Roseovarius sp. 217 TMM Generator II</a></li>
+  </ul>
+</div>
+
+<!-- Main Content Area -->
+<div class="data-main-content">
+  <section id="section1" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content1')">	BBa_K5064000 - M. aminisulfidivorans TMM</h2>
+    <div id="content1" class="data-content">
+      <p>Methylophaga aminisulfidivorans are aerobic bacteria isolated from seawater near Mokpo, South Korea, that plays a vital role in biogeochemical cycling in coastal and marine environments. Of particular interest in our research is the flavin-containing monooxygenase (FMO) enzyme found in this organism. This specific sequence contains an N78S mutation, and a 6x His-tag for IMAC purification. This mutant Tmm is significant for our project because it possesses a Km of 7.3 μM which we believe makes it optimal for TMA sensing. This part has the wild-type start codon GGC (glycine)</p>
+    </div>
+  </section>
+
+  <section id="section2" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content2')">	BBa_K5064001 - M. aminisulfidivorans TMM II</h2>
+    <div id="content2" class="data-content">
+      <p>Methylophaga aminisulfidivorans are aerobic bacteria isolated from seawater near Mokpo, South Korea, that plays a vital role in biogeochemical cycling in coastal and marine environments. Of particular interest in our research is the flavin-containing monooxygenase (FMO) enzyme found in this organism. This specific sequence contains an N78S mutation, and a 6x His-tag for IMAC purification. This mutant Tmm is significant for our project because it possesses a Km of 7.3 μM which we believe makes it optimal for TMA sensing. This part has ATG (methionine) inserted upstream of the wild-type starting coding GGC (Glycine) to experiment with which has the most optimal expression. </p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">	BBa_K5064002 - M. aminisulfidivorans TMM III</h2>
+    <div id="content3" class="data-content">
+      <p>Methylophaga aminisulfidivorans are aerobic bacteria isolated from seawater near Mokpo, South Korea, that plays a vital role in biogeochemical cycling in coastal and marine environments. Of particular interest in our research is the flavin-containing monooxygenase (FMO) enzyme found in this organism. This specific sequence contains an N78S mutation, and a 6x His-tag for IMAC purification. This mutant Tmm is significant for our project because it possesses a Km of 7.3 μM which we believe makes it optimal for TMA sensing.This part has the wild-type starting coding GGC (glycine) replaced with ATG (Methionine) to experiment with which has the most optimal expression. </p>
+    </div>
+  </section>
+
+  <section id="section4" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content4')">	BBa_K5064003 - Roseovarius sp. 217 TMM II</h2>
+    <div id="content4" class="data-content">
+      <p>Roseovarius sp. 217 is a marine bacterium isolated from a methyl halide oxidizing enrichment culture derived from surface seawater near Plymouth, England. This species serves as a foundational component for my trimethylamine monooxygenase (TMM) research, as it has the capability to convert trimethylamine (TMA) into trimethylamine N-oxide (TMAO), which is then further processed into formaldehyde and ammonia. The sequence was modified with a 6x His-tag for IMAC purification.</p>
+    </div>
+  </section>
+
+  <section id="section5" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content5')">	BBa_K5064004 - M. aminisulfidivorans TMM Generator</h2>
+    <div id="content5" class="data-content">
+      <center><img src="https://static.igem.wiki/teams/5064/ba-k5064004-m-aminisulfidivorans-tmm-generator.png" alt="M. aminisulfidivorans TMM Generator SBOL" width="750" height="194"></center>
+      <p>Methylophaga aminisulfidivorans are aerobic bacteria isolated from seawater near Mokpo, South Korea, that play a vital role in biogeochemical cycling by converting TMA into TMAO. To synthesize M. aminisulfidivorans TMM for our project, the protein-coding sequence was inserted into a biological device. This construct utilizes a T7 promoter to initiate transcription, coupled with a ribosome binding site (RBS) that facilitates protein synthesis and interacts with the enzyme-coding sequence itself. This variant retains the wild-type start codon GGC (glycine). Gene expression is regulated and properly stopped using a T7 terminator.  The 6x His-tag will be used to find the protein using IMAC. </p>
+    </div>
+  </section>
+
+  <section id="section6" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content6')">	BBa_K5064005 - M. aminisulfidivorans TMM II Generator</h2>
+    <div id="content6" class="data-content">
+      <center><img src="https://static.igem.wiki/teams/5064/ba-k5064005-m-aminisulfidivorans-tmm-ii-generator.png" alt="M. aminisulfidivorans TMM Generator II SBOL" width="750" height="194"></center>
+      <p>Methylophaga aminisulfidivorans are aerobic bacteria isolated from seawater near Mokpo, South Korea, that play a vital role in biogeochemical cycling by converting TMA into TMAO. To synthesize M. aminisulfidivorans TMM for our project, the protein-coding sequence was integrated into a biological device. This construct features a T7 promoter to initiate transcription, along with an ATG (methionine) codon inserted upstream of the wild-type GGC (glycine) start codon. This modification aims to provide a more recognizable start for translation. The ribosome binding site (RBS) promotes efficient protein synthesis while interacting with the enzyme-coding sequence. A T7 terminator is included to ensure proper transcription termination. The 6x His-tag will be used to find the protein using IMAC. </p>
+    </div>
+  </section>
+
+  <section id="section7" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content7')">	BBa_K5064006 - M. aminisulfidivorans TMM III Generator</h2>
+    <div id="content7" class="data-content">
+      <center><img src="https://static.igem.wiki/teams/5064/ba-k5064006-m-aminisulfidivorans-tmm-iii-generator.png" alt="M. aminisulfidivorans TMM Generator III SBOL" width="750" height="194"></center>
+      <p>Methylophaga aminisulfidivorans are aerobic bacteria isolated from seawater near Mokpo, South Korea, that play a vital role in biogeochemical cycling by converting TMA into TMAO. To synthesize M. aminisulfidivorans TMM for our project, the protein-coding sequence was incorporated into a biological device. This construct employs a T7 promoter for transcription initiation, with the wild-type GGC (glycine) start codon replaced by ATG (methionine) to explore the effects of a more common start codon arrangement on expression. The ribosome binding site (RBS) enhances protein synthesis while interacting with the enzyme-coding sequence. A T7 terminator is used to terminate gene expression appropriately. The 6x His-tag will be used to find the protein using IMAC. </p>
+    </div>
+  </section>
+
+  <section id="section8" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content8')">	BBa_K5064007 - Roseovarius sp. 217 TMM II Generator</h2>
+    <div id="content8" class="data-content">
+      <center><img src="https://static.igem.wiki/teams/5064/ba-k5064007-roseovarius-sp-217-tmm-ii-generatorr.png" alt="Roseovarius sp. 217 TMM II Generator SBOL" width="750" height="194"></center>
+      <p>Roseovarius sp. 217, isolated from a methyl halide oxidizing enrichment culture in seawater near Plymouth, England, plays a critical role in biogeochemical cycling by converting TMA into TMAO. To synthesize the TMM enzyme from Roseovarius sp. 217, which contains the wild-type start codon GGC (glycine), the gene was incorporated into a biological device. This construct combines a T7 promoter to initiate transcription with a ribosome entry site to promote the initiation of protein synthesis and interaction with the enzyme coding sequence. Transcription termination is ensured with a T7 terminator. The 6x His-tag will be used to find the protein using IMAC. </p>
+    </div>
+  </section>
+
+  <section id="section9" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content9')">	BBa_K5064008 - Roseovarius sp. 217 TMM Generator II</h2>
+    <div id="content9" class="data-content">
+      <center><img src="https://static.igem.wiki/teams/5064/ba-k5064008-roseovarius-sp-217-tmm-ii-generator.png" alt="Roseovarius sp. 217 TMM Generator II SBOL" width="750" height="194"></center>
+      <p>Roseovarius sp. 217, isolated from a methyl halide oxidizing enrichment culture in seawater near Plymouth, England, plays a critical role in biogeochemical cycling by converting TMA into TMAO. To synthesize the TMM enzyme, a variant was created where an ATG (methionine) codon was inserted upstream of the wild-type GGC (glycine) codon. This gene was integrated into a biological device combining a T7 promoter, which initiates transcription, with a ribosome entry site that facilitates the start of protein synthesis. A T7 terminator ensures proper transcription termination. For purification, reverse purification will be employed, where everything except the target His-tagged molecule will be removed, allowing for the efficient isolation of the TMM enzyme. </p>
+    </div>
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'layout.html' %}
+
+{% block title %}Safety{% endblock %}
+
+{% block page_content %}
+<!-- Banner Section -->
+<div class="data-banner">
+  <h1>Data Overview</h1>
+</div>
+
+<!-- Left-hand Key for Sections -->
+<div class="data-key-container">
+  <ul class="data-section-key">
+    <li><a href="#section1">Overview</a></li>
+    <li><a href="#section2">Safety in the Laboratory</a></li>
+    <li><a href="#section3">Patient Safety</a></li>
+    <li><a href="#section4">Laboratory Safety Equipment</a></li>
+    <li><a href="#section5">References</a></li>
+  </ul>
+</div>
+
+<!-- Main Content Area -->
+<div class="data-main-content">
+  <section id="section1" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content1')">Overview</h2>
+    <div id="content1" class="data-content">
+      <p>All research conducted by the FSU iGEM team is in accordance with the safety policies and rules from iGEM, Florida State University, FAMU-FSU College of Engineering, and the FSU College of Medicine. Laboratory safety is the number one priority when working in any lab, especially where we did most of our work: the FAMU-FSU College of Engineering Cell & Tissue Engineering Laboratory.</p>
+    </div>
+  </section>
+
+  <section id="section2" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content2')">Safety in the Laboratory</h2>
+    <div id="content2" class="data-content">
+      <p>We began our laboratory work with a comprehensive safety training session led by Dr. Arce, our Biomedical Engineering advisor. Understanding the inherent risks associated with laboratory environments, Dr. Arce ensured that we were thoroughly trained in the fundamentals of lab safety. This training covered the location and proper use of all safety equipment, including the eyewash station, fire alarm, and personal protective equipment (PPE). We were also made aware of emergency contacts and protocols, underscoring the importance of safety as our top priority. Upon completion of this session, we signed a clearance form, certifying our readiness to work safely in the lab.</p>
+      <p>With this foundation, we proceeded confidently with our laboratory tasks, consistently adhering to the requirement of wearing appropriate PPE—lab coats, gloves, hot hands, pants, and close-toed shoes. We extended this rigorous safety protocol to our work at the FSU College of Medicine, where our Principal Investigator (PI) provided additional lab safety training. This training further emphasized the critical importance of PPE and maintaining high levels of lab awareness.</p>
+        <p>In the course of our research, particularly when using NEB Cell-Free Protein Synthesis Kits and Spin Columns, we closely reviewed the SDS protocols. Our commitment to safety not only ensured our well-being but also facilitated a productive and efficient lab environment, allowing us to focus on the precision and reliability required in our experimental work.</p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Patient Safety</h2>
+    <div id="content3" class="data-content">
+      <p>It is crucial to prioritize the comfort and respect of the patients we encountered. The HP team diligently sought consent before using quotes, dialogue, or any recorded materials from TMAU patients. We consistently upheld the rights and concerns of these individuals, showing the utmost respect for members of the TMAU community. Many patients preferred not to be recorded or have their identities disclosed, which is why we used quotes carefully and ensured that those who shared their experiences were satisfied with how the FSU 2024 iGEM team portrayed their words and the disease.</p>
+            <center><img src="https://static.igem.wiki/teams/5064/patient-safe-graph.webp" alt="Patient Safety Graph" width="357" height="275"></center>
+
+
+    </div>
+  </section>
+
+  <section id="section4" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content4')">Laboratory Safety Equipment</h2>
+    <div id="content4" class="data-content">
+      <center><img src="hhttps://static.igem.wiki/teams/5064/4408821d-8d45-417c-a8b2-fb81210cac17-1-105-c.webp" alt="Biohazardous Waste Container" width="357" 
+      <p>A biohazardous waste container is used to safely dispose of materials contaminated with biological agents, such as blood, bodily      fluids, or infectious substances, to prevent exposure and ensure proper containment for disposal.</p>
+      <center><img src="https://static.igem.wiki/teams/5064/44351596-bb89-484c-a006-91d4aa3f06de-1-105-c.webp" alt="Biosafety Cabinet" width="357"
+      <p>A biosafety cabinet is a ventilated laboratory workspace that provides a sterile environment while protecting the user, the sample, and the surrounding area from biohazardous agents through HEPA filtration and controlled airflow.<p>
+        <center><img src="https://static.igem.wiki/teams/5064/a72135ee-b6a1-4045-99ab-957286e972eb-1-105-c-1.webp" alt="First Aid Kit" width="357"
+        <p>A first aid kit in the lab is a readily accessible collection of medical supplies, such as bandages, antiseptics, and burn treatments, designed to address minor injuries and emergencies that may occur during lab work.<p>
+        <center><img src="https://static.igem.wiki/teams/5064/824e1937-9b49-4ebf-b230-6eafa941b6c5-1-105-c-1.webp" alt="PPE" width="357"
+        <p>In the lab, personal protective equipment (PPE) such as gloves, lab coats, and safety goggles is used to protect individuals from exposure to hazardous chemicals, biological agents, and other dangerous materials.<p>  
+        <center><img src="https://static.igem.wiki/teams/5064/086a804e-407a-4700-922a-c19fbb3e98f3-1-105-c-1.webp" alt="Laboratory Safety Manual" width="357"
+        <p>The above image is the binder with the safety documents we all signed after being trained in the laboratory by Dr. Stephen Arce.<p>
+    </div>
+  </section>
+
+  <section id="section5" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content4')">References</h2>
+    <div id="content4" class="data-content">
+      <p>[1] OSHA. (2011, August). Laboratory safety guidance - occupational safety and health administration. OSHA Fact Sheet: Laboratory Safety Biosafety Cabinets (BSCs). https://www.osha.gov/sites/default/files/publications/OSHA3404laboratory-safety-guidance.pdf</p>
+      <p>[2] Shah, P., Thornton, I., Turrin, D., & Hipskind, J. E. (2023, June 5). Informed consent - statpearls - NCBI bookshelf. Informed Consent. https://www.ncbi.nlm.nih.gov/books/NBK430827/<p>
+    </div>
+  </section>
+</div>
+{% endblock %}

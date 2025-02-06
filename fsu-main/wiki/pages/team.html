@@ -1,0 +1,262 @@
+{% extends "layout.html" %}
+
+{% block page_content %}
+
+<div class="banner">
+    <h1>Our Team</h1>
+</div>
+<section class="team-leads-section">
+    <h2 class="section-title">Leadership Team</h2>
+    <div class="cards-container">
+        <!-- Team Lead Cards (2) -->
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/5064/ely-nieves.jpg" class="card-img-top" alt="Team Lead 1">
+            <div class="card-body">
+                <h5 class="card-title">Team Leader and Engineering Leader</h5>
+                <p class="card-text">
+                    Hi! My name is <b>Ely Nieves</b>, and I'm from Kissimmee Florida. I am entering my 4th year at
+                    Florida State majoring in Athletic Training. My career goals include becoming a Physician Associate
+                    in a surgical specialty and continuing my research passions in the clinical field. ...
+                    <span id="more-lead1" class="more-text" style="display:none;"> This project has allowed to use my
+                        passion for innovating and helping patients in a way I haven't been able to before. .</span>
+                </p>
+                <button onclick="toggleReadMore('more-lead1', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/5064/hanna-yilmaz-rodriguez2.jpg" class="card-img-top"
+                alt="Team Lead 2">
+            <div class="card-body">
+                <h5 class="card-title">Associate Team Leader</h5>
+                <p class="card-text">
+                    Hi! My name is <b>Hanna Yilmaz-Rodriguez</b>, I'm from Kissimmee, Florida. I am a 3rd year student
+                    at Florida State University majoring in Biomedical Engineering. In the future, I plan on attending
+                    medical school and becoming a physician. In my free time, I enjoy reading books, working out, and
+                    hanging out with my friends.
+                    <span id="more-lead2" class="more-text" style="display:none;"> More details about Associate Team
+                        Leader.</span>
+                </p>
+                <button onclick="toggleReadMore('more-lead2', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/5064/arjan.jpg" class="card-img-top" alt="Software Lead">
+            <div class="card-body">
+                <h5 class="card-title">Software Lead</h5>
+                <p class="card-text">
+                    My name is <b>Arjan Adhikari</b>, and I go to FSU!
+                    <span id="more-software" class="more-text" style="display:none;">My name is Arjan Adhikari, and I am
+                        the software lead for the FSU 2024 iGEM team! I am responsible for designing the wiki and
+                        overseeing our app. I was born in Jacksonville Florida but have moved around since my childhood.
+                        My immediate family now lives in Atlanta while I attend FSU in Tallahassee. I major in Computer
+                        Science, and I plan to go to graduate school for something psychology or neuroscience related. I
+                        am very interested in working with people. Sitting behind a screen all day does not suit me. I
+                        am so excited to be a part of this team and all the wonderful people in it! They have been so
+                        welcoming and taught me that you can find community anywhere. Even if they do not think our
+                        brief interactions have done much, I am a lot more self-assured and they were a part of that
+                        puzzle. I am also grateful for the support my family gives me that allows me to pursue an
+                        opportunity such as this. Many beams of fortune fell on me to grant this opportunity. I hope my
+                        efforts contribute to a beam of fortune cast on someone. With that being said, I take pride in
+                        the endeavors I pursue, and I want to be known as someone with technical skill. I have a true
+                        interest in technology. I also want to be known as someone who cares for people, comradery, and
+                        acceptance.</span>
+                </p>
+                <button onclick="toggleReadMore('more-software', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/5064/aidan-marengo.jpg" class="card-img-top"
+                alt="Visual Arts Lead">
+            <div class="card-body">
+                <h5 class="card-title">Visual Arts Lead</h5>
+                <p class="card-text">
+                    Hi! My name is <b>Aidan Marengo</b> and I’m from St. Petersburg, Florida. I’m a sophomore at Florida State majoring in Digital Media Production, and I was responsible for creating both the Promotional and Presentational Videos. I have strong interests in both visual storytelling and video production, as well as in science and medicine. I hope to one day combine these paths in the future, working somewhere in science communication.
+                    <span id="more-visual-arts" class="more-text" style="display:none;"> It was very rewarding working with and getting to know the members of the FSU iGEM team. Getting the chance to visually showcase/tell the story of TMAU and how we are supporting this underrepresented community was very rewarding, as well.</span>
+                </p>
+                <button onclick="toggleReadMore('more-visual-arts', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Entrepreneurship">
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/5064/zachary-asarnow.jpg" class="card-img-top" alt="Ent 1">
+            <div class="card-body">
+                <h5 class="card-title">Entrepreneurship Lead</h5>
+                <p class="card-text">
+                    Hi! My name is <b>Zachary Asarnow</b> and I’m from Maitland Florida. I’m a third year at Florida
+                    State University majoring in Economics and minoring in STEM Entrepreneurship. After University I
+                    plan on pursuing my master's degree in either economics or biology and continuing my involvement in
+                    Biotechnology. My overall goal is to help as many people as possible improve their lives.
+                    <span id="more-ent1" class="more-text" style="display:none;">Zachary, an Economics student, led the
+                        Entrepreneurship effort as the Entrepreneurship Lead. His work included researching and writing
+                        the business plan, reaching out to potential stakeholders and experts in the field, and engaging
+                        in networking and entrepreneurial activities such as pitch competitions.</span>
+                </p>
+                <button onclick="toggleReadMore('more-emt1', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="human-practices-section">
+    <h2 class="section-title">Human Practices Team</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/5064/megan-perusse.jpg" class="card-img-top"
+                alt="Human Practices Member 1">
+            <div class="card-body">
+                <h5 class="card-title">Human Practices Co-Lead</h5>
+                <p class="card-text">
+                    Hi! My name is <b>Megan Perusse</b>, and I’m from Port Saint Lucie, Florida. I am a senior at FSU
+                    studying Behavioral Neuroscience. I have a passion for healthcare and helping others, and in the
+                    future, I plan on pursuing a career in medicine! In my free time I love reading, baking, hiking, and
+                    exploring Tallahassee with friends.
+                    <span id="more-hp1" class="more-text" style="display:none;"> I co-led the Human Practices team for
+                        this year’s iGEM project. My work included interviewing patients with TMAU, arranging meetings
+                        with FSU faculty and stakeholders, and organizing the second annual Tallahassee Biotechnology
+                        Expo. </span>
+                </p>
+                <button onclick="toggleReadMore('more-hp1', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/5064/lucas-team-pic2.png" class="card-img-top"
+                alt="Human Practices Member 2">
+            <div class="card-body">
+                <h5 class="card-title">Human Practices Co-Lead</h5>
+                <p class="card-text">
+                    My name is <b>Lucas Bonassi</b> and I am a Finance major. In my spare time, I enjoy playing  golf, making ceramics, and cooking.
+
+                    <span id="more-hp2" class="more-text" style="display:none;">Co-leading the Human Practices aspect of this year's project, my work included interviewing patients with TMAU, advising all sub-teams on their work for patients, and developing the educational outreach initiative in Tallahassee.</span>
+                </p>
+                <button onclick="toggleReadMore('more-hp2', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="engineering-section">
+    <h2 class="section-title">Engineering Team</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/5064/dorian-chin.jpg" class="card-img-top"
+                alt="Engineering Member 2">
+            <div class="card-body">
+                <h5 class="card-title">Design Workgroup Member</h5>
+                <p class="card-text">
+                    I’m <b>Dorian Chin</b> a Biomedical Engineering major from Wellington, Palm Beach, with aspirations
+                    to become a biomedical technician specializing in orthopedics. I am passionate about advancing
+                    medical technology to improve patient outcomes. Currently, I am interning at the Mayo Clinic, which
+                    enhances my hands-on experience in the field. Outside of academics, I play intramural basketball and
+                    soccer, and I love to travel, exploring new places and cultures.
+                    <span id="more-eng2" class="more-text" style="display:none;">During the project, I was deeply
+                        involved in various aspects of development. I took on CAD design tasks, focusing on the device's
+                        exterior modeling and constructing its circuitry. I also contributed to creating the SBOL format
+                        on the BioRender platform and used my mathematical skills to fine-tune the device’s circuitry.
+                        Additionally, I modeled the protein generator and conducted literature research to select the
+                        most suitable enzyme and methodology for our device. My role was crucial in advancing the
+                        project, and my ongoing internship at the Mayo Clinic further enhanced my practical experience.
+                        Beyond my academic and professional pursuits, I stay active with intramural basketball and
+                        soccer, and I enjoy traveling to discover new cultures and experiences..</span>
+                </p>
+                <button onclick="toggleReadMore('more-eng2', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/5064/mvp22-igem-headshot.webp" class="card-img-top" alt="Eng4">
+            <div class="card-body">
+                <h5 class="card-title">Design Workgroup Member</h5>
+                <p class="card-text">
+                    I’m <b>Michael (Vincent) Pilapil</b>, a senior biomedical engineering major and from Ocala, Fl. I
+                    plan to take this degree in the field of Rehabilitation Engineering to impact the lives of people
+                    who need assistance in getting activity back into their lives. I enjoy running, powerlifting, and
+                    learning how to play the guitar.
+                    .
+                    <span id="more-eng4" class="more-text" style="display:none;">During the project, I contributed to
+                        the research and development of our monitoring device known as EsperSense. In the early stages
+                        of the project, I did plenty of literature reviews and real-life interviews that were impactful
+                        in understanding how we could incorporate BIOFET into our design. I was able to allocate
+                        resources that helped determine the specificities of our design such as; electrode type, types
+                        of testing, and circuit design. With my history of instrumentation, I was able to be impactful
+                        in the development of EsperSense. I constructed specific components for the circuit layout such
+                        as AD60 Operational Amplifiers, Band-Pass Filters, and an Arduino. I am glad to be given the
+                        opportunity to help the TMAU community with my skill set. </span>
+
+                </p>
+                <button onclick="toggleReadMore('more-eng4', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/5064/jordan-schwartz-1.jpg" class="card-img-top"
+                alt="Engineering Member 1">
+            <div class="card-body">
+                <h5 class="card-title">Modeling Lead</h5>
+                <p class="card-text">
+                    Hello, my name is <b>Jordan Schwartz</b>. I am from Weston, Florida and currently in my 3rd year at
+                    Florida State University. I am majoring in exercise physiology with a minor in chemistry, and I led
+                    the modeling for this year’s FSU IGEM project. I have an interest in material science as well as
+                    medicine, and I hope to one day integrate the two in my future.
+                    <span id="more-eng1" class="more-text" style="display:none;"> During this IGEM cycle, I have learned
+                        much about mathematical modeling and its applications to everyday bodily functions that many of
+                        us are not aware of. Although the learning curve was steep at first, I am greatful for this
+                        experienced because I was able to expand my knowledge and appply it to an area to help a
+                        population of patients in need. </span>
+                </p>
+                <button onclick="toggleReadMore('more-eng1', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/5064/result-ava-polly-4.webp" class="card-img-top" alt="Eng3">
+            <div class="card-body">
+                <h5 class="card-title">Build Workgroup Member</h5>
+                <p class="card-text">
+                    Hi, my name is <b>Ava Polly</b>, and I’m from Altamonte Springs, Florida. I am currently a Senior at FSU
+                    getting a Dual Degree in Exercise Physiology and STEM Entrepreneurship. In the future, I intend to
+                    eventually attain my PhD in Biomedical Engineering or Cellular and Molecular Biology.
+                    I have a passion for helping others and would love to continue to research rare diseases such as TMAU.
+                    .
+                    <span id="more-eng3" class="more-text" style="display:none;">Outside of the team, I am involved in the
+                        Medical Response Unit, the American Medical Women’s Association, and the FSU Flying High Circus. I
+                        love to draw, play with my cat, travel, and attend FSU sports games. </span>
+                </p>
+                <button onclick="toggleReadMore('more-eng3', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="PIs-section">
+    <h2 class="section-title">Principal Investigators</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/4680/wiki/banners/banners/banners/cesarhead.png"
+                class="card-img-top" alt="Primary Principal Investigator">
+            <div class="card-body">
+                <h5 class="card-title">Primary PI</h5>
+                <p class="card-text">
+                    I'm <b>Cesar Rodriguez</b> the primary principal investigator of the iGEM at FSU teams from 2017 to 2024.
+                    <span id="more-pi1" class="more-text" style="display:none;"> I'm a research faculty I and
+                        entrepreneur in residence in the Department of Biomedical Sciences at the FSU College of
+                        Medicine.</span>
+                </p>
+                <button onclick="toggleReadMore('more-pi1', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://static.igem.wiki/teams/4680/wiki/banners/banners/banners/davehead.png"
+                class="card-img-top" alt="Secondary Principal Investigator">
+            <div class="card-body">
+                <h5 class="card-title">Secondary PI</h5>
+                <p class="card-text">
+                    I'm <b>David Montez</b> the secondary principal investigator of the iGEM at FSU teams from 2018 to 2024.
+                    <span id="more-pi2" class="more-text" style="display:none;">I'm an associate director at the FSU Center for Undergraduate Research and Academic Engagement</span>
+                </p>
+                <button onclick="toggleReadMore('more-pi2', this)" class="read-more-btn">Read More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

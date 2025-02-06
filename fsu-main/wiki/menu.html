@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a href="{{ url_for('pages', page='home') }}" class="navbar-logo">
+            <img src="https://static.igem.wiki/teams/5064/white-outlines-espersense-logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="projectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Project</a>
+                    <ul class="dropdown-menu" aria-labelledby="projectDropdown">
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='home') }}">Home Page</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='medals') }}">Medals</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="humanPracticesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Human Practices</a>
+                    <ul class="dropdown-menu" aria-labelledby="humanPracticesDropdown">
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='human-practices') }}">Report</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='timeline') }}">Timeline</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="engineeringDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Engineering</a>
+                    <ul class="dropdown-menu" aria-labelledby="engineeringDropdown">
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}"><b>Report</b></a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Models</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='parts') }}">Parts</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='protocols') }}">Protocols</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='safety') }}">Safety</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('pages', page='entrepreneurship') }}" id="entrepreneurshipDropdown" role="button">Entrepreneurship</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('pages', page='education') }}" id="educationDropdown" role="button">Education</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Team</a>
+                    <ul class="dropdown-menu" aria-labelledby="teamDropdown">
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Members</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

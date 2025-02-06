@@ -1,0 +1,346 @@
+{% extends 'layout.html' %}
+
+{% block title %}Entrepreneurship{% endblock %}
+
+{% block page_content %}
+<!-- Banner Section -->
+<div class="data-banner">
+  <h1>Entrepreneurship Report</h1>
+</div>
+
+<!-- Left-hand Key for Sections -->
+<div class="data-key-container">
+  <ul class="data-section-key">
+    <li><a href="#section1">Overview</a></li>
+    <li><a href="#section2">The Problem Addressed</a></li>
+    <li><a href="#section3">Updates on E. esperance</a></li>
+    <li><a href="#section4">Product Description</a></li>
+  </ul>
+</div>
+
+<!-- Timeline Module -->
+{% include 'pages/timeline.html' %}
+
+<!-- Main Content Area -->
+<div class="data-main-content">
+  <section id="section1" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content1')">Overview</h2>
+    <div id="content1" class="data-content">
+      <p>EsperSense is a convenient device and mobile application that monitors Trimethylamine (TMA) concentrations in patients affected by Trimethylaminuria (TMAU). Our team of 11 passionate students from iGEM Florida State University developed this device to address the lack of monitoring capabilities of TMAU patients to track their symptoms. Our primary mission is to enhance the quality of life for TMAU patients through precise and convenient symptom monitoring. To maximize the impact of EsperSense on those suffering from TMAU, bringing the product to market would be the best solution to improve the patient’s quality of life. This comprehensive analysis delves into the technical aspects, market potential, and business strategy behind EsperSense, highlighting its potential to revolutionize the lives of TMAU patients worldwide.</p>
+    </div>
+  </section>
+
+  <section id="section2" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content2')">The Problem Addressed</h2>
+    <div id="content2" class="data-content">
+      <p>Trimethylaminuria (TMAU), also known as Fish Odor Syndrome, is an Autosomal Recessive genetic disorder that burdens patients with an overpowering, stigmatizing odor, isolating them from society and taking a major toll on their mental health. The compound Trimethylamine (TMA) creates the fishy odor associated with TMAU. It accumulates in abnormally high concentrations in patients with TMAU because they cannot properly oxidize it into non-odorous trimethylamine-N-oxide (TMAO) as unaffected people do. Being an ultra-rare disease, affecting a little over 800,000 people globally, the patient community often feels neglected and rejected, cultivating a deep feeling of hopelessness and on some occasions suicidal thoughts and ideation. There is a distinct lack of solutions for monitoring and managing symptoms creating a large gap in the market that our project addresses. Our goal in addressing TMAU is to provide hope, relief, and a better quality of life for individuals battling TMAU.</p> </p>Our team with EsperSense is developing a device to detect and monitor individuals' TMA concentrations. Despite the relatively low patient population of around 800,000 people worldwide, the high demand for monitoring presents us with an impactful initiative and a potentially high return. Our innovative solution, a breathalyzer leveraging a Biological Field Effect Transistor (Bio-FET) with a high-affinity receptor for TMA detection, offers a non-invasive method for monitoring and managing TMAU symptoms. We are also developing a mobile app companion to connect to the device and provide easily accessible and understandable symptom monitoring and analysis.</p> 
+</p>Our decision to continue focusing on TMAU from the 2023 iGEM cycle was driven by a passion for helping the patient community battling this debilitating disorder. As mentioned in Human Practices* our monitoring device will ease the burden of TMAU and lessen its control on patients’ lives. By further engaging with our patient community and learning of their struggles we have grown even more motivated to bring our innovations to market and into their lives.</p> 
+</p>We have already begun the process of bringing last year’s project, E. esperance, to market, with an overall plan of combining these two products to form a parent company called Esperance Healthcare. EsperSense will be used in tandem with the therapeutic to determine when and how much of the therapeutic should be used.</p>
+      </p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Updates on E. esperance</h2>
+    <div id="content3" class="data-content">
+      <p>Members from FSU’s 2024 iGEM team have taken the reigns for the development of E. esperance’s venture to continue its viability past the iGEM Jamboree. 
+These are the steps taken to the present:
+</p>
+    </div>
+  </section>
+
+  <section id="section4" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content4')">Product Description</h2>
+    <div id="content4" class="data-content">
+      <p>Our device is a convenient and ergonomic breathalyzer that can detect TMA concentration in exhaled breath—using a graphene Biological Field Effect Transistor integrated with a specifically chosen Trimethylamine Monooxygenase (Tmm) for TMA. These receptors possess a high binding affinity for TMA, allowing accurate detection through changes in electrostatic potential when TMA binds to the receptor. When a patient exhales into the device, TMA molecules in the breath interact with these receptors, causing a measurable change in the electrical current.
+
+This change in current is then translated into a quantitative measurement of TMA concentration. By providing real-time TMA measurements, EsperSense empowers patients to track their symptoms, identify triggers, and make informed lifestyle choices to manage their condition.
+
+Along with the breathalyzer is the companion app.
+The key features of the app include:
+TMA level tracking
+Personalized Treatment Recommendations (Therapeutic Dosages)
+Lifestyle Guidance (e.g. diet, exercise, and stress management)
+Symptom Tracking
+Trigger Identification
+Progress Monitoring
+Community Support
+
+
+Lifestyle Guidance with EsperSense
+
+In addition to monitoring TMA levels, EsperSense can also provide patients with valuable insights into lifestyle factors that may contribute to TMA production. By analyzing TMA data alongside patient-reported information about diet, exercise, and other lifestyle factors, EsperSense can identify potential triggers and offer personalized recommendations.
+
+
+Diet Recommendations:
+
+EsperSense can help patients identify foods that may exacerbate TMA production, such as red meat, beans, fish, and certain vegetables. Based on the identified triggers, patients can make informed dietary adjustments to reduce TMA levels.
+Other Lifestyle Factors:
+
+Regular exercise can help regulate metabolism and may have an indirect impact on TMA production. EsperSense can help patients track the effects of exercise on TMA levels. Stress can affect gut health and metabolism, potentially influencing TMA production. EsperSense can be used to monitor TMA levels during periods of stress and help patients develop effective stress management techniques. Some medications may interact with TMA metabolism. EsperSense can help patients identify potential interactions and make necessary adjustments to their medication regimen.
+
+By providing personalized lifestyle guidance, EsperSense can empower patients to take a proactive approach to managing TMAU and improve their overall well-being.
+</p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Esperance Healthcare</h2>
+    <div id="content3" class="data-content">
+      <p>One of the key aspects of EsperSense is its complementary use with Esperance Therapeutic’s cell-based therapeutic, E. esperance. It will measure the TMA concentration in a patient and then through the mobile app give an analysis and recommendations for the amount of the therapeutic to be taken and when. These two business segments together form the parent company Esperance Healthcare. Esperance Healthcare is a pioneering synthetic biology start-up focused on creating innovative solutions for patients with Trimethylaminuria (TMAU). 
+
+The combined use of E. esperance and EsperSense offers a comprehensive approach to managing TMAU:
+
+Personalized Treatment: EsperSense will provide real-time data on TMA levels, allowing for personalized adjustments to E. esperance dosage and timing
+Symptom Management: Patients can track the effectiveness of E. esperance in reducing TMA levels and make informed lifestyle decisions
+Early Detection: EsperSense can detect TMA spikes before they lead to noticeable odor, allowing for proactive intervention with E. esperance
+Improved Quality of Life: By providing both therapeutic and diagnostic tools, Esperance Healthcare can significantly enhance the quality of life for TMAU patients.
+</p>
+    </div>
+  </section>
+
+<section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Customer Segments</h2>
+    <div id="content3" class="data-content">
+      <p>
+The primary customer base of EsperSense and E. esperance are individuals diagnosed with Trimethylaminuria (TMAU). Since TMAU is “ultra rare” (as it has been described by industry experts) and there are presently no monitoring devices or successful treatments on the market, the annual revenue generated from the purchase of monitoring devices is not applicable. Therefore, the estimated market value is significantly untapped and undervalued.
+
+Due to the chronic nature of TMAU and the persistent demand for symptom management and monitoring Esperance Healthcare is positioned as a viable venture. However, our primary mission is to enhance the quality of life for TMAU patients so we will strive to make our products as affordable and accessible as possible.
+
+From the many interviews we conducted with TMAU patients, which can be found on our Human Practices Page, the overwhelming response is that they are willing to try any treatment that can help. With that in mind, we want to ensure that our products follow safety and government guidelines, along with both bioethical and ethical business practices to provide hope and trust for TMAU patients who use EsperSense and E. esperance.
+
+“We would swallow nails if it meant a cure” - TMAU Patient
+
+Primary Users:
+TMAU Patients: Individuals directly affected by TMAU who will use both EsperSense and E. esperance for monitoring and treatment.
+
+Secondary Users:
+Healthcare Providers: Doctors and specialists who will recommend and monitor the use of EsperSense and E. esperance.
+
+Caregivers: Family members or caregivers who assist TMAU patients in managing their condition.
+</p>
+    </div>
+  </section>
+
+<section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Stakeholders Analysis</h2>
+    <div id="content3" class="data-content">
+      <p>We have engaged with multiple stakeholders to ensure a comprehensive approach to product development and commercialization: 
+Researchers & Professors: Collaboration with experts from FSU College of Medicine and Jim Moran School of Entrepreneurship.
+Legal Advisors: Patent and corporate lawyers guiding intellectual property and regulatory compliance.
+Industry Experts: Leadership members from the biotechnology sector providing insights into market trends and business strategy.
+Physicians: Input from healthcare providers to align the device with clinical needs.
+Patients: Feedback from TMAU patients to tailor the device to their specific requirements.
+Zimmer and Peacock: Potential collaboration for manufacturing and technical support.
+</p>
+    </div>
+  </section>
+
+<section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Market Analysis</h2>
+    <div id="content3" class="data-content">
+      <p>The target market for EsperSense is individuals diagnosed with Trimethylaminuria (TMAU). Because of the low population size of TMAU there is a lack of data on any competitors in the market or accurate depictions of the market size. This, however, presents us with the opportunity to penetrate this untapped and undervalued market. We also have plans to expand the data and information on the market. We spoke to Dr. Tamara Demko, a health policy lawyer, and discussed the possibility and steps to creating a mass survey of patients with TMAU. We also spoke on the possibilities of classifying TMAU as a disability which would provide benefits to the TMAU community. 
+
+While the prevalence of TMAU is relatively low, estimated to affect fewer than 1 million people worldwide, the chronic aspect of TMAU ensures a consistent demand for ongoing monitoring and treatment, creating a recurring revenue model. Patients with TMAU require continuous management of their symptoms, which EsperSense can provide through real-time monitoring of TMA levels using its innovative Bio-FET breathalyzer technology. This non-invasive method, combined with the therapeutic benefits of E. esperance, offers a comprehensive solution that addresses a significant unmet need in the market. By focusing on direct marketing to TMAU patients, engaging healthcare providers, and leveraging patient advocacy groups, Esperance Healthcare can build trust and awareness within the TMAU community. Additionally, the high engagement levels of patients with chronic conditions further enhance the likelihood of product adoption and consistent use.
+
+The willingness of TMAU patients to try new treatments and monitoring solutions, as indicated by patient surveys and interviews, supports the viability and potential profitability of these products. By ensuring regulatory compliance, conducting rigorous clinical trials, and publishing results in reputable medical journals, Esperance Healthcare can build credibility and trust among patients and healthcare providers. Furthermore, developing pricing strategies that make the products accessible while ensuring profitability, such as subscription models for app usage and sensor replacements, can create a steady revenue stream.
+</p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Pricing and Funding</h2>
+    <div id="content3" class="data-content">
+      <p>Pricing Model (E. esperance): Original model can be found on the 2023 FSU iGEM page. 
+The New Estimated Price of E. esperance is $15 per week due to costs. 
+
+Pricing Model (EsperSense): Compared to the market on monitoring devices such as Glucose monitors and to the market on breathalyzers.
+
+
+Key Components and Estimated Costs
+Electrochemical Sensor:
+Description: Measures TMA concentration.
+Cost: $10 - $20 per unit
+Microcontroller:
+Description: Processes sensor data and controls device functions.
+Cost: $5 - $10 per unit.
+Display Screen:
+Description: Shows TMA concentration readings.
+Cost: $3 - $5 per unit.
+Power Supply (Battery):
+Description: Powers the device.
+Cost: $2 - $4 per unit.
+Casing:
+Description: Encloses and protects internal components.
+Cost: $1 - $3 per unit.
+Bluetooth Module:
+Description: Enables wireless data transfer to a smartphone or computer.
+Cost: $2 - $5 per unit.
+Software Development:
+Description: Firmware for the device and mobile app integration.
+Cost: $50,000 - $100,000 (one-time development cost).
+Manufacturing and Assembly:
+Description: Costs associated with mass production and assembly.
+Cost: $5 - $10 per unit.
+
+Total Estimated Cost per Unit
+Adding up the costs for each component, the estimated cost per unit at mass production values would be approximately $28 - $57. This does not include the one-time software development cost, which would be amortized over the total number of units produced.
+
+Pricing Model
+To determine the final retail price, consider the following factors:
+
+Cost of Goods Sold (COGS): $28 - $57 per unit.
+Research and Development (R&D): Amortize the software development cost over the expected sales volume.
+Marketing and Distribution: Typically, add 20-30% of COGS.
+Profit Margin: Aim for a 30-50% profit margin.
+
+Estimated Calculation
+Assuming a COGS of $40 per unit, marketing and distribution costs of 25%, and a profit margin of 40%:
+
+COGS: $40
+Marketing and Distribution: $10 (25% of $40)
+Subtotal: $50
+Profit Margin: $20 (40% of $50)
+Final Retail Price: $70
+
+This pricing model ensures that all costs are covered while providing a reasonable profit margin.
+
+To fully understand the market size and overall potential revenues for EsperSense and Esperance Healthcare as a whole, we decided to analyze the Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and the Service Obtainable Market (SOM).
+
+The Total Addressable Market (TAM) refers to the total market demand or opportunity for a specific product or service. It represents the entire potential market, assuming there are no limitations or restrictions, regardless of practical constraints. In the case of EsperSense and Esperance Healthcare for TMAU patients, the TAM would encompass all individuals globally who are affected by TMAU. The global population is currently estimated at around 800,000 people. This would be the largest possible number of individuals who could benefit from the products.
+
+The Serviceable Addressable Market (SAM) represents the portion of the TAM that a company can realistically target and serve with its product or service. It takes into account factors such as geographical limitations, regulatory constraints, and the company's resources.  In the case of EsperSense and Esperance Healthcare in the context of TMAU, the SAM would encompass the subset of TMAU patients who are reachable and can access the product, primarily in the United States. The population of people with TMAU in the United States is estimated at around 33,600 people. This is also determined by factors like regulatory approvals in specific regions, the ability to manufacture and distribute the probiotic, and the availability of healthcare infrastructure to support diagnosis and treatment.
+
+The Service Obtainable Market (SOM) is the specific segment of the SAM that a company can realistically capture and serve, considering its marketing efforts, distribution channels, competition, and other factors. In the case of EsperSense and Esperance Healthcare, SOM would be the subset of TMAU patients within the SAM who can be effectively reached and willing to use E. esperance and EsperSense. The chart below depicts scenarios where 75%, 50%, and 25% of the SOM is reached. This would depend on the company's marketing strategies, partnerships with healthcare providers, pricing, and the overall accessibility of the product.
+
+Below represents a figure of all 3 Markets and the potential values attained through the product, EsperSense, E. esperance, and a figure for the whole of Esperance Healthcare.
+</p>
+    </div>
+  </section>
+
+<section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Value Proposition</h2>
+    <div id="content3" class="data-content">
+      <p>EsperSense provides a unique and essential solution for TMAU patients:
+
+Accuracy: Leveraging high-affinity receptors ensures precise TMA detection.
+Convenience: The breathalyzer format allows for easy, non-invasive monitoring.
+Comprehensive Management: Offering both diagnostic and therapeutic tools to provide a holistic approach to managing TMAU.
+Personalized Care: Real-time data and personalized recommendations to tailor treatment and lifestyle adjustments.
+Improved Quality of Life: Empowering patients to take control of their condition and reduce the social stigma associated with TMAU.
+</p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Business Model and Revenue Streams</h2>
+    <div id="content3" class="data-content">
+      <p>EsperSense's business model is centered around the sale of the device itself, as well as subscription-based services for sensor replacements and data analytics. The device will be priced at a premium due to its innovative technology and the significant value it provides to TMAU patients.
+
+To reach its target market, EsperSense will employ a multi-channel distribution strategy, including:
+
+Direct-to-consumer sales: A user-friendly online platform will allow patients to purchase the device directly.
+Healthcare providers: Partnerships with specialists in rare diseases will help to increase awareness of EsperSense and facilitate patient access.
+Medical supply companies: Distribution through established networks of medical supply companies will expand the device's reach.
+
+By combining EsperSense with Esperance Therapeutics: 
+We are creating an opportunity to tackle the symptoms of TMAU more fully than anything else in the market
+We are developing a strong foundation to apply our knowledge and technological skills from addressing TMAU to other rare diseases and enzyme deficiency diseases
+We are diversifying our revenue streams and expanding our market growth
+</p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Marketing</h2>
+    <div id="content3" class="data-content">
+      <p>A comprehensive digital marketing campaign will be implemented to reach potential customers and increase awareness of EsperSense. Key elements of this campaign will include:
+
+Social media: Engaging content will be shared on platforms such as Facebook, Instagram, Twitter, and TikTok, targeting TMAU patients, healthcare providers, and relevant interest groups.
+Content marketing: Educational blogs, articles, and videos will be created to provide information about TMAU, the benefits of EsperSense, and patient success stories.
+Search engine optimization (SEO): The EsperSense website will be optimized for relevant keywords to improve visibility in search engine results.
+Email marketing: A newsletter will be sent to subscribers to provide updates, promotions, and valuable content related to TMAU and EsperSense.
+
+Medical Conferences
+Attending and presenting at medical conferences and symposia will provide opportunities to showcase EsperSense to healthcare providers, researchers, and industry professionals. This will help to establish EsperSense as a leading solution for TMAU and foster relationships with key stakeholders.
+
+
+Patient Advocacy Groups
+Partnerships with TMAU patient advocacy groups will help to connect EsperSense with the target market and gather valuable feedback. By working with these organizations, EsperSense can gain insights into the specific needs and challenges faced by TMAU patients, which can inform product development and marketing efforts.
+
+Public Relations
+A well-executed public relations strategy will help to generate media coverage and increase awareness of EsperSense. This may involve:
+
+Media outreach: Pitching stories to relevant media outlets, including healthcare publications, news outlets, and online influencers.
+Media training: Providing training to company representatives to effectively handle media inquiries and interviews.
+
+Customer Testimonials and Case Studies
+Sharing patient testimonials and case studies can be a powerful marketing tool. By highlighting the positive impact EsperSense has on patient's lives, the company can build trust and credibility with potential customers.
+</p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Patenting Plans</h2>
+    <div id="content3" class="data-content">
+      <p>Intellectual Property Protection
+Protecting the intellectual property associated with EsperSense is crucial to maintaining a competitive advantage and preventing unauthorized use of the technology. The company will file patents for the innovative aspects of the device, including:
+
+Bio-FET technology: The underlying sensor technology used in EsperSense is a key component of the device. Patents can be obtained to protect the specific design and manufacturing processes of the Bio-FET.
+TMA receptors: The receptors used in EsperSense to detect TMA are another important aspect of the technology. Patents can be obtained to protect the specific sequences, structures, and methods of producing these receptors.
+Algorithms: The algorithms used to process the data from the Bio-FET and generate TMA measurements can also be protected by patents.
+In addition to patents, EsperSense may also consider other forms of intellectual property protection, such as copyrights for software or trademarks for the EsperSense brand name.
+</p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Regulatory Compliance</h2>
+    <div id="content3" class="data-content">
+      <p>To ensure the safety and efficacy of EsperSense, the device will be subject to rigorous regulatory oversight. The specific regulatory requirements will vary depending on the jurisdiction where the device is intended to be sold. In the United States, EsperSense will likely need to comply with the following regulations:
+
+Food and Drug Administration (FDA): As a medical device, EsperSense will need to obtain clearance from the FDA before it can be sold in the United States. The specific classification of the device will determine the level of regulatory scrutiny required. Based on its intended use, EsperSense may be classified as a Class II medical device, which requires submission of a 510(k) premarket notification to the FDA.
+
+Federal Trade Commission (FTC): The FTC regulates advertising and marketing claims. EsperSense must ensure that all claims made about the device are truthful, substantiated, and comply with FTC guidelines.
+
+State regulations: In addition to federal regulations, EsperSense may also need to comply with state-specific regulations, such as licensing requirements or sales tax laws.
+</p>
+    </div>
+  </section>
+
+<section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Risk Analysis</h2>
+    <div id="content3" class="data-content">
+      <p>The development and market introduction of EsperSense, a device designed to monitor Trimethylamine (TMA) concentrations in patients with Trimethylaminuria (TMAU), presents several risks that need careful consideration. Technical risks include ensuring the breathalyzer’s accuracy and reliability, as any discrepancies could lead to incorrect symptom management. The seamless integration between the breathalyzer and its mobile app is crucial, as technical glitches or connectivity issues could hinder user experience and trust. Additionally, the long-term stability and sensitivity of the Biological Field Effect Transistor (Bio-FET) sensors must be validated to ensure they remain effective over time.
+
+Market risks are significant given the ultra-rare nature of TMAU, affecting around 800,000 people globally. Convincing this small patient population to adopt a new technology could be challenging, especially with potential competition from new entrants offering more advanced or cost-effective solutions. Setting a price point that balances affordability for patients and profitability for the company is critical, as high costs could deter potential users.
+
+Navigating the regulatory landscape for medical devices can be complex and time-consuming. Delays in obtaining necessary approvals could impact the product launch timeline. Ensuring the mobile app complies with data protection regulations (e.g., GDPR, HIPAA) is essential to protect patient information and avoid legal issues.
+
+Operational risks include establishing a reliable manufacturing process and supply chain. Any disruptions could delay production and delivery. As demand grows, scaling up production while maintaining quality could be challenging. Financially, securing sufficient funding to cover development, production, and marketing costs is essential. Failure to attract investors could stall progress, and keeping development and operational costs under control while ensuring high-quality standards is vital for financial sustainability.
+
+Strategically, forming partnerships with healthcare providers, patient advocacy groups, and other stakeholders is important. Failure to establish these relationships could limit market reach. Effectively reaching and educating the target market about the benefits of EsperSense is crucial, as poor marketing strategies could result in low adoption rates.
+
+Reputation risks are also a concern. Any issues with product performance or negative user experiences could harm the company’s reputation and hinder market acceptance. Providing excellent customer support is essential, as poor support could lead to dissatisfaction and negative word-of-mouth.
+
+In addition to these risks, the integration of EsperSense with E. esperance, a cell-based therapeutic developed by the same team, adds another layer of complexity. E. esperance aims to provide personalized treatment by adjusting dosages based on real-time TMA levels detected by EsperSense. This combined approach offers a comprehensive solution for managing TMAU, but it also means that any issues with one product could affect the other. Ensuring both products work seamlessly together is crucial for the overall success of Esperance Healthcare, the parent company. By addressing these risks proactively, EsperSense and E. esperance can better navigate the challenges and maximize their potential to improve the quality of life for TMAU patients.
+</p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Next Steps for EsperSense and Esperance Healthcare</h2>
+    <div id="content3" class="data-content">
+      <p>Currently, our next steps include:
+Continuing testing of our MVP (Minimum Viable Product)
+Competing in more pitch competition to spread awareness of TMAU and to acquire funds
+Finish filing patents for E. esperance and initiate the process for EsperSense
+
+
+
+</p>
+    </div>
+  </section>
+
+</div>
+{% endblock %}

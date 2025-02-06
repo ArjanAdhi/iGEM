@@ -1,0 +1,91 @@
+{% extends 'layout.html' %}
+
+{% block title %}Human Practices{% endblock %}
+
+{% block page_content %}
+<!-- Banner Section -->
+<div class="data-banner">
+  <h1>Human Practices</h1>
+</div>
+
+<!-- Left-hand Key for Sections -->
+<div class="data-key-container">
+  <ul class="data-section-key">
+    <li><a href="#section1">Overview</a></li>
+    <li><a href="#section2">What is TMAU?</a></li>
+    <li><a href="#section3">Isolation & Lack of Resources</a></li>
+    <li><a href="#section4">Why a Monitoring Device?</a></li>
+    <li><a href="#section5">Patient-Driven Design</a></li>
+    <li><a href="#section6">Conclusion</a></li>
+  </ul>
+</div>
+
+<!-- Main Content Area -->
+<div class="data-main-content">
+  <!-- Section 1: Overview -->
+  <section id="section1" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content1')">Overview</h2>
+    <div id="content1" class="data-content">
+      <p>Rare diseases are often accompanied by significant mental health challenges, feelings of isolation, and a sense of hopelessness. Within a healthcare system where financial motives often dictate priorities, these conditions are frequently marginalized. The 2023 FSU iGEM team took on the challenge of addressing Trimethylaminuria (TMAU), a rare condition that has been largely ignored by the medical community despite its profound impact on those who suffer from it. The lack of available treatments and the high cost of testing only adds to the burden on affected individuals, leaving them to navigate their condition with little support. Last year’s team strived to create a cell-based therapeutic to help combat symptoms at the source. Their work established valuable connections and trust within the community of those suffering from TMAU. They also began the crucial task of educating TMAU patients, physicians, and the broader community about a disease that has been sidelined for far too long.</p>
+      <p>This year, recognizing the profound importance of the work the 2023 FSU iGEM team began, our team chose to continue and expand our focus on TMAU. While reflecting on the 2023 project and exploring other possible topics, we felt as a team that the progress made last year was just the beginning, and we became committed to escalating our research and assistance efforts. Our goal was to develop a TMA monitoring system that would significantly improve the lives of those with TMAU by addressing the lack of resources and patient autonomy associated with this overlooked condition.Below are stakeholder maps that the team brainstormed at the start of the competition.</p>
+      <p><center><img src="https://static.igem.wiki/teams/5064/stakeholder-maps.png" alt="Matrix picture" width="850" height="790"></center></p>
+    </div>
+  </section>
+
+  <!-- Section 2: What is TMAU? -->
+  <section id="section2" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content2')">What is Trimethylaminuria?</h2>
+    <div id="content2" class="data-content">
+      <p>Imagine living with a condition where your body produces a strong odor that you can't control—a smell so distinctive that it cannot be masked. This is the reality for people with trimethylaminuria, or TMAU, often referred to as "fish odor syndrome." This nickname might lead you to assume TMAU is merely an inconvenience, but this could not be further from the truth. Instead, trimethylaminuria is a condition that affects every interaction and relationship, often leaving those with the condition feeling isolated and misunderstood in society.</p>
+      <p>TMAU is characterized by the body's inability to oxidize trimethylamine (TMA). This causes TMA to build up and then be released through sweat, breath, and urine. Unfortunately, this condition is not widely known or understood, even within the medical community. This is partly because there has been very little research into this disease, the population it affects, or possible treatments. Cleveland Clinic states that between 1 in 200,000 and 1 in 1 million people around the world have TMAU [1]. This is an extreme range, and highlights exactly how little is known about this disease and those that suffer from it. Historically, the Monell Chemical Sciences Center has been one of the only research institutions in the United States that has conducted private research on Trimethylaminuria. Unfortunately, their research into TMAU has largely ended following the passing of Dr. George Preti who was leading most of those research efforts.</p>
+      <p>The odorous compound trimethylamine is formed when carnitine and choline from the diet are metabolized in the gut. Normally, an enzyme in the liver called flavin-containing monooxygenase 3 (FMO3) converts trimethylamine into non-odorous trimethylamine N-oxide that the body can safely eliminate. However, in people with TMAU, mutations in the FMO3 gene lead to reduced enzyme activity. This condition is often inherited in an autosomal recessive manner, meaning a person needs to inherit two copies of the faulty gene (one from each parent) to show symptoms. TMAU doesn't usually cause physical harm, but its impact on a person's social and emotional well-being can be profound [2].</p>
+      <p>This lack of recognition and understanding has led to an absence of support for those who suffer from it. The negative social stigma attached to the symptoms of the condition often forces sufferers to navigate the world silently, struggling to find answers in a world that does not recognize or understand their challenges.</p>
+      <p>[1] Trimethylaminuria TMAU (Fish Odor Syndrome): Treatment, Symptoms & Causes [Internet]. Cleveland Clinic. Available from: https://my.clevelandclinic.org/health/diseases/22356-trimethylaminuria-fish-odor-syndrome</p> 
+      <p>[2] Phillips, I.R., & Shephard, E.A. (2018). Trimethylaminuria. In GeneReviews [Internet]. University of Washington, Seattle. Available from: https://www.ncbi.nlm.nih.gov/books/NBK1103/</p>
+    </div>
+  </section>
+
+  <!-- Section 3: Isolation and Lack of Resources -->
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Isolation and Lack of Resources</h2>
+    <div id="content3" class="data-content">
+      <p>The physical symptoms of TMAU are challenging, but they pale in comparison to the emotional toll this condition takes. Many patients speak of a deep sense of isolation, feeling pushed away by a society that wrongly sees them as unhygienic. It’s heartbreaking to hear their stories—being brushed off by healthcare professionals, called delusional, or simply told to shower. These are all experiences that TMAU patients shared during interviews with both the 2023 FSU iGEM team, and our team this year. These patients expressed to us that this lack of understanding leaves them not just isolated but causes them to feel deeply betrayed by the very people who are supposed to help. One patient even asked us "What am I doing wrong as a sufferer to make them [the healthcare community and government] ignore me?”</p> 
+      <p>In their desperate search for a solution, patients often go to extreme lengths. Some describe an almost obsessive approach to hygiene—endless showers, layering on perfumes and lotions, trying anything to mask the odor that seems to define their lives. Others turn to diet, experimenting with various foods, probiotics, teas, and vitamins, hoping for some form of relief. But these efforts, while earnest, often fall short, leaving them feeling frustrated and defeated.</p>  
+      <p>Testing for TMAU is another hurdle that adds to their struggles. Currently, there is only one location offering non-genetic testing for Trimethylaminuria in the United States, however this testing cost is around $600. The cost alone is enough to deter many from seeking a formal diagnosis, leaving them in a painful limbo of not knowing. Even for those who can afford testing, many view it as pointless due to the lack of a cure or treatment for the symptoms, leaving them even more hopeless. This combination of emotional isolation, failed attempts at relief, and the high cost of testing leaves many feeling hopeless, as though they’re fighting a battle they can’t win. This profound lack of options—combined with the reality that nothing currently eases the symptoms—drove us to develop a monitoring device.</p>
+    </div>
+  </section>
+
+  <!-- Section 4: Why a Monitoring Device? -->
+  <section id="section4" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content4')">Why a Monitoring Device?</h2>
+    <div id="content4" class="data-content">
+      <p>After deciding to focus on Trimethylaminuria, our team began brainstorming exactly how we could best help those suffering. After speaking with several patients about their routines and how the disease impacts their daily lives, we had direct discussions about how TMAU patients could improve their lives and reach a form of normalcy. We realized that what most patients felt robbed of was autonomy. For most people living with TMAU, identifying the patterns in their symptoms is difficult, leaving them guessing when they will flare up. This prevents patients from being in control of their lives and routines and instead gives this control to their symptoms. This was a heartbreaking reality we recognized after speaking to TMAU patients.</p>  
+      <p>We began brainstorming how to possibly give these patients their autonomy back with something that could be used both with E.Esperance and independently, and we believed this could be accomplished with a monitoring device. Through conversations with patients and other stakeholders, the 2023 FSU iGEM team identified a large gap in affordable testing methods. While a lab-based diagnostic test exists, there are no available devices that allow patients to monitor the level of odor causing TMA in their bodies. We felt that a monitoring device was a tangible way to help the patient population and bridge that gap.</p> 
+      <p>While the 2023 FSU team’s therapeutic solution is still being tested, our monitoring device can used by TMAU suffers to gauge the severity of their TMAU symptoms as it relates to their diet. Given the variability among the patient population, each patient may not know how much of the therapeutic to take, so we needed to help them manage their dosage effectively. Once brought to market, our device will work in conjunction with the cell-based therapeutic from the 2023 team to give patients full autonomy regarding TMA concentration levels and provide effective dosage amounts to administer the therapeutic.</p> 
+      <p>Being able to monitor the TMA concentrations in a patient’s breath will provide clinicians and patients with the data necessary to monitor and implement new treatments. Data on concentration levels will create the opportunity to calculate dosing for therapeutics such as FSU iGEM’s 2023 TMAU therapeutic project. It will also allow each individual patient to recognize unique patterns in their own symptoms and possibly gain more control over their lives. It is our hope that the knowledge and data provided by our device will empower patients to feel comfortable and confident in public and around friends and family, ultimately giving them a better quality of life.</p>
+    </div>
+  </section>
+
+  <!-- Section 5: Patient-Driven Design -->
+  <section id="section5" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content5')">Patient-Driven Design</h2>
+    <div id="content5" class="data-content">
+      <p>We spoke to several individuals with TMAU throughout the project, and their input was crucial in shaping the design of our device. They provided valuable insights into the specific needs of those living with this condition. The feedback we received ranged from general preferences on the type of device to more detailed suggestions on how they’d like to receive their readings.</p> 
+      <p>Our patient interviews began by asking which form of testing they preferred for the monitoring device: options included a breathalyzer, sweat patch, urinalysis, saliva collection, finger prick, or a subcutaneous monitor. Across all interviews, there was unanimous support for a breathalyzer, as it was seen as the simplest and quickest way to use and receive a reading—fulfilling their desire for a highly convenient device. Patients also emphasized the importance of discreetness and portability. Many expressed a strong preference for a device that could be used discreetly, especially in public or work environments due to the unwanted attention and questions it could potentially bring. One patient went into detail about this, saying they would feel 'ashamed and embarrassed' if a coworker or even a family member saw them using the device.</p>
+      <p>When it came to the breathalyzer’s functionality, opinions varied. Some patients wanted a numerical reading for the most precise information, while others preferred a simple, easy-to-understand color indicator using a light on the device. To accommodate these differing preferences, our breathalyzer will offer both options: a color reading displayed on the device and a numerical reading available through a paired app. Below is a impact-feasibility matrix of potential monitoring devices that were considered by the team.</p>
+      <p>Detailed descriptions of these patient interviews and interactions with stakeolders can be found under our Timeline section.<p>
+      <p><center><img src="https://static.igem.wiki/teams/5064/feasibility-impact-matrix.png" alt="Matrix picture" width="600" height="340"></center></p>
+    </div>
+  </section>
+
+  <!-- Section 6: Conclusion -->
+  <section id="section6" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content6')">Conclusion</h2>
+    <div id="content6" class="data-content">
+      <p>As we worked on this project, it became clear that the voices of those living with TMAU were crucial in guiding our efforts. Hearing their experiences of isolation, the struggle with getting the right resources, and the emotional burden they carry pushed us to build on the work done by last year’s FSU iGEM team. We knew there was more to do, and we were committed to taking it further.</p> 
+      <p>The development of the breathalyzer monitoring device came directly from listening to what patients needed. We didn’t want to just create another gadget; we wanted to make something that could genuinely help them feel more in control of their lives. Working in conjunction with our therapeutic, patients will know when and how much of a dose they need to manage their symptoms most efficiently. The goal was to design something convenient, discreet, and truly useful—a tool that could help TMAU patients manage their symptoms without feeling like they’re defined by them.</p> 
+      <p>This project has been about more than just technology— it's a step toward a future where TMAU patients are no longer defined by their condition but by their resilience and the support they receive from a community that truly understands their needs. As we move forward, we remain committed to continuing our work in the spirit of collaboration, innovation, and compassion, always with the goal of making a real difference in the lives of those who need it most.</p>
+    </div>
+  </section>
+</div>
+{% endblock %}

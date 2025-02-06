@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block title %}description{% endblock %}
+
+{% block page_content %}
+<!-- Banner Section -->
+<div class="data-banner">
+  <h1>Project Description</h1>
+</div>
+
+<!-- Left-hand Key for Sections -->
+<div class="data-key-container">
+  <ul class="data-section-key">
+    <li><a href="#section1">Background</a></li>
+    <li><a href="#section2">Our Mission</a></li>
+    <li><a href="#section3">Our Solution</a></li>
+    <li><a href="#section4">Detection Of TMA Using Bio-FET</a></li>
+    <li><a href="#section5">Entrepreneurship Goals</a></li>
+  </ul>
+</div>
+
+<!-- Main Content Area -->
+<div class="data-main-content">
+  <section id="section1" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content1')">Background</h2>
+    <div id="content1" class="data-content">
+      <p>Trimethylaminuria (TMAU), commonly known as "fishy odor disease," is a metabolic disorder in which the body cannot properly oxidize trimethylamine (TMA) into odorless trimethylamine-N-oxide (TMAO). This inability to process TMA leads to its accumulation, causing a strong, fish-like odor that is excreted through sweat, breath, and urine. The condition profoundly affects those living with it, often leading to social isolation and emotional distress.</p>
+    </div>
+  </section>
+
+  <section id="section2" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content2')">Our Mission</h2>
+    <div id="content2" class="data-content">
+      <p>Our mission is to support, educate, and empower individuals affected by trimethylaminuria (TMAU). Through our research and interactions with those impacted by the condition, we've realized how little is known about TMAU, not only in the public sphere but even among healthcare professionals. Patient stories have highlighted that TMAU is far more than just an "odor syndrome." Individuals with TMAU demonstrate incredible resilience, and we aim to raise awareness of their challenges and strengths. Our goal is to develop innovative tools that enable patients to monitor and manage their condition more effectively while inspiring increased understanding and action within the healthcare community.</p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Our Solution</h2>
+    <div id="content3" class="data-content">
+      <p>Building on our research and the efforts of the 2023 FSU iGEM team, we are committed to developing a comprehensive management system for TMAU patients. Our focus is on creating a user-friendly, reliable TMA detection device—the EsperSense breathalyzer—that will allow patients to monitor trimethylamine levels discreetly and conveniently. This compact tool will enable real-time tracking of TMA levels, offering patients critical insights into their condition and providing objective data to guide treatment adjustments.By combining this diagnostic device with ongoing therapeutic research, our team is creating an integrated solution for TMAU management. Patients will be able to fine-tune their treatments, optimize dietary choices, and evaluate the effectiveness of their current therapies, including supplements like activated charcoal and copper chlorophyllin or antibiotics.</p>
+    </div>
+  </section>
+
+  <section id="section4" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content4')">Detection of TMA Using Bio-FET</h2>
+    <div id="content4" class="data-content">
+      <p>At the heart of the EsperSense breathalyzer is a BioFET (Biologically Sensitive Field-Effect Transistor). This advanced technology leverages a biological sensing element to detect changes in electrical signals triggered by TMA's interaction with a receptor on the sensor. When TMA binds to this receptor, the BioFET registers a measurable change in electrical resistance or voltage, providing precise, real-time detection of TMA levels in the patient's breath. This will enable TMAU patients to actively monitor their condition and make informed decisions about their treatment.</p>
+    </div>
+  </section>
+
+  <section id="section5" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content5')">Entrepreneurship Goals</h2>
+    <div id="content5" class="data-content">
+      <p>Our team aims to revolutionize the management of TMAU by developing this integrated diagnostic and therapeutic solution, exemplified by the EsperSense breathalyzer. We envision a future where TMAU patients can seamlessly track their symptoms, optimize their treatment, and improve their overall quality of life. By providing a reliable tool for real-time TMA monitoring, we empower patients to take charge of their health. Beyond the device, we are committed to advocating for greater awareness, understanding, and action from healthcare providers, researchers, and policymakers.</p>
+    </div>
+  </section>
+
+  
+
+</div>
+{% endblock %}
+

@@ -1,0 +1,254 @@
+{% extends 'layout.html' %}
+
+{% block title %}Models{% endblock %}
+
+
+{% block page_content %}
+<!-- Banner Section -->
+<div class="data-banner">
+  <h1>Modeling</h1>
+</div>
+
+<!-- Left-hand Key for Sections -->
+<div class="data-key-container">
+  <ul class="data-section-key">
+    <li><a href="#section1">Model Overview</a></li>
+    <li><a href="#section2">Modeling Equations</a></li>
+    <li><a href="#section3">Enzymes and Kinetics</a></li>
+    <li><a href="#section4">Molecular Docking Simulation</a></li>
+    <li><a href="#section5">Implications of TMA Concentration and Cyclic Voltammetry In Literature</a></li>
+    <li><a href="#section6">Modeling TMA Concentration Using Amperometry</a></li>
+    <li><a href="#section7">Device Modeling</a></li>
+    <li><a href="#section8">BioFET Components</a></li>
+    <li><a href="#section9">Device Components</a></li>
+    <li><a href="#section10">Conclusions</a></li>
+     <li><a href="#section11">References</a></li>
+  </ul>
+  </ul>
+</div>
+
+<!-- Main Content Area -->
+<div class="data-main-content">
+  <section id="section1" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content1')">Model Overview</h2>
+    <div id="content1" class="data-content">
+      <p>The 2024 FSU IGEM team used statistical, electrochemical, and biological modeling to investigate the challenges posed by the design process with the aim of developing a new diagnostic tool inspired by FSU IGEM's therapeutic E. esperance. For this year’s project, we developed three key models to enhance different aspects of our research in designing a device capable of detecting trimethylamine (TMA) via breath analysis. The first model involves molecular docking, which we used to determine the binding affinity of TMA to specific enzymes, guiding the selection of enzymes that our engineered bacteria should express. The second model is an amperometric measurement, which enables the device to accurately measure TMA concentrations based on the collection of one’s breath. The third model encompasses the components of the device, which allows the TMA from the patient’s breath to be converted into a interpretable valuable. Building on these models, we developed a BioFET, which was inserted into an electrical device for patient use. This device provides output and visualization via LEDs, allowing for real-time monitoring of TMA levels.</p>
+      
+    </div>
+  </section>
+
+  <section id="section2" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content2')">Modeling Equations</h2>
+    <div id="content2" class="data-content">
+      <p> <strong> Michaelis-Menten Kinetics </strong> </p>
+      <p>The Michaelis-Menten equation models the change in velocity of a chemical reaction as the substrate saturates the enzyme. (Seabury & Stork, 2023). </p>
+      <center><img src="https://static.igem.wiki/teams/5064/michaelis-menten.webp" alt="Michaelis-Menten" width="300" height="100"></center>
+      <p> 𝑣 = Velocity of reaction, 𝐾<sub>M</sub> = Michaelis constant, V<sub>max</sub> = Maximum rate achieved by system, S = Concentration of substrate <br></p>
+      
+      <p> <strong> Gibbs Free Energy </strong> </p>
+      <p> Gibbs free energy is associated with the amount of “work” or energy needed for a reaction to occur, and to determine its favorability in terms of spontaneity (Kamran, 2021). </p>
+      <center><img src="https://static.igem.wiki/teams/5064/gibbs.webp" alt="Gibbs Free Energy" width="300" height="50"></center>
+      <p> ∆𝐺 = Change in free energy, ∆𝐻 = Change in enthalpy, ∆𝑆 = Change in Entropy, 𝑇 = Temperature in Kelvin <br></p> 
+
+      <p> <strong> Nernst Equation </strong> </p>
+      <p> The Nernst equation tells us about the cell potential of an electrochemical reaction (Souza, et al, 2020). </p>
+      <center><img src="https://static.igem.wiki/teams/5064/nernst.webp" alt="Nernst" width="200" height="100"></center>
+      <p> 𝐸 = Reduction potential, 𝐸<sup>0</sup> = Standard Potential, 𝑅 = Universal gas constant, 𝑇 = Temperature in Kelvin, 𝑧 = Ion charge, 𝐹 = Faraday Constant, 𝑄 = Reaction quotient  <br></p> 
+
+      <p> <strong> Randles-Sevcik Equation </strong> </p>
+      <p> The Randles-Sevcik equation can be used to determine the diffusion coefficient gathered in a cyclic voltammetry experiment (Leftheriotis, et al, 2007). </p>
+      <center><img src="https://static.igem.wiki/teams/5064/randels-eq.webp" alt="Randles-Sevcik" width="350" height="250"></center>
+      <p> i<sub>p</sub> = Current maximum (amps), n = Number of electrons transferred in the redox event, A = electrode area (cm<sup>2</sup>), F = Faraday constant, D = Diffusion coefficient (cm<sup>2</sup>/s), C = Concentration (mol/cm<sup>3</sup>), ν = Scan rate (V/s), R = Gas constant, T = Temperature in Kelvin <br></p>
+
+       <p> <strong> Butler-Volmer Equation </strong> </p>
+       <p>The Butler-Volmer equation is useful for determining the kinetic of an electrode (Dickinson, et al, 2020). </p>
+      <center><img src="https://static.igem.wiki/teams/5064/butler-eq.webp" alt="Butler-Volmer" width="500" height="100"></center>
+      <p> i<sub>p</sub> = Current maximum (amps), n = Number of electrons transferred in the redox event, j = electrode current density (A/m<sup>2</sup>),j<sub>0</sub> = Exchange current density (A/m<sup>2</sup>), E = Electrode potential (V), E<sub>eq</sub> = Equilibrium potential (V), z = number of electrons, F = Faraday constant,a<sub>c</sub> = Cathodic charge transfer coefficient, a<sub>a</sub> = Anodic charge transfer coefficient, R = Gas constant, T = Temperature in Kelvin <br></p>
+
+      <p> <strong> One-electron Electrochemical Reaction </strong> </p>
+      <p> This equation simulates a single electron transfer electrochemical reaction used cyclic voltammetry (Attia, 2020).</p>
+      <center><img src="https://static.igem.wiki/teams/5064/cv-simulation-equation.webp" alt="CV Sim eq" width="300" height="100"></center>
+      <p> O = Concentration of oxidant, e<sup>-</sup> = Electron, k<sub>f</sub> = Constant rate of forward reaction, k<sub>b</sub> = Constant rate of reverse reaction, R = Concentration of reductant, k<sub>c</sub> = Chemical rate constant, Z = Concentration of product produced by a unimolecular reaction with the reduction product </p>
+
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Enzyme Kinetics</h2>
+    <div id="content3" class="data-content">
+      <p> <strong> Enzyme Kinetics </strong> </p>
+      <center><img src="https://static.igem.wiki/teams/5064/enzyme-kinetic-chart.webp" alt="Enzyme kinetics chart" width="600" height="600"></center>
+      <p> K<sub>M</sub> and V<sub>max</sub> are two key variables we considered when considering favorable enzyme kinetics for our modeling and experimental conditions. A challenge with TMA is that it is extremely small, non-polar, has steric hinderance and can only be detected in extremely low concentrations. Therefore, to maximize the detection of this molecule is have it interact with a specialized enzyme, human flavin-monooxygenase 3 (fmo3) or trimethyl monooxygenase (tmm), and measure it with a highly sensitive device. However, for the purpose of creating a reliable and efficient device for patients, not just any hfmo3 or tmm will be satisfactory. We strived to use an enzyme that has been proven to have a high binding affinity relative to enzyme and substrate concentration to ensure a higher and more accurate TMA measurement. In addition, the rate at which TMA binds with the enzyme and oxidizes was important to consider for how long it will take a patient to obtain the results of their test with our device. The Michaelis-Menten constant, K<sub>M</sub>, indicates the efficiency of an enzyme under different substrate concentrations (Ahern & Rajagopal). K<sub>M</sub> is inversely related to the affinity of the enzyme for its substrate. A low K<sub>M</sub> suggests a higher enzyme binding affinity, meaning less substrate is required to reach the half V<sub>max</sub>. Meanwhile, a high K<sub>M</sub> suggests a low enzyme binding affinity, indicating more substrate is required to reach the half V<sub>max</sub> (Ahern & Rajagopal). V<sub>max</sub> represents the maximum rate at which the enzyme catalyzes the reaction when the enzyme is fully saturated with the substrate (Ahern & Rajagopal) .
+    </div>
+  </section>
+
+  <section id="section4" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content4')">Molecular Docking Simulation</h2>
+    <div id="content4" class="data-content">
+      <p>Molecular docking is a computational technique that predicts how a small molecule, or ligand, binds to larger biomolecules such as proteins, enzymes, or nucleic acids. The software used to simulate molecular docking included UCSF Chimera and Tamarind Bio. Additionally, built-in programs such as AutoDock Vina and Smina are algorithms that run molecular docking simulation and provide a score relative to how well a molecule is predicted to bind to a protein or enzyme (Skariyachan & Garka, 2018 ). The output after running the simulation is a scored based on binding affinity (kcal/mol), and the upper and lower bound RMSD, or root mean standard deviation (Koes et al, 2013). A greater negative value for binding affinity indicates a better predicted binding affinity, and a lower negative value indicates a lower predicted binding affinity, and the RMSD value is a measure of comparison between experimental and predicted structures (Koes et al, 2013). A lower RMSD represents that there is little difference between the conformation of structures and a greater RMSD value represents a greater difference between predicted and experimental structures (Koes et al, 2013). </p>
+      <br>
+      <p> <strong> Human FMO3 </strong></p>
+      <center><img src="https://static.igem.wiki/teams/5064/p31513-affinity-distance-table-1.webp" alt="P31513 chart" width="700" height="400"></center><br> <center><img src="https://static.igem.wiki/teams/5064/p31513-ribbon-image.webp" alt="P31513 ribbon" width="700" height="400"></center><br> 
+      <p> Human FMO3 ribbon structure</p>
+        <center><img src="https://static.igem.wiki/teams/5064/p31513-surface-image.webp" alt="P31513 chart" width="700" height="400"></center>
+      <p> Human FMO3 hydrophobic surface </p>
+
+      <p> <strong> R. pomeroyi TMM  </strong></p>
+      <center><img src="https://static.igem.wiki/teams/5064/q5lt63-chart.webp" alt="Q5LT63 chart" width="700" height="400"></center>
+      <p> <strong> M. aminisulfidivorans TMM  </strong> </p>
+      <center><img src="https://static.igem.wiki/teams/5064/2xlp-affinity-distance-table-5.webp" alt="2XLP chart" width="700" height="400"></center>
+      <p> <strong> Roseovarius sp.217 TMM </strong></p>
+      <center><img src="https://static.igem.wiki/teams/5064/roseovarius-affinity-distance-table-2.webp" alt="Roseovarius chart" width="700" height="400"></center>
+      <p> <strong> M. silvestris TMM </strong></p>
+      <center><img src="https://static.igem.wiki/teams/5064/m-silv-affinity-distance-table-4.webp" alt="m.Silvestris chart" width="700" height="400"></center>
+    </div>
+  </section>
+
+<section id="section5" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content5')">Implications of TMA Concentration and Cyclic Voltammetry In Literature</h2>
+    <div id="content5" class="data-content">
+      <p>To measure the concentration TMA, knowing the voltage potential of TMA in its oxidized state, TMAO, is necessary. This value is established by testing the minimum amount of voltage required for a single electron transfer in a redox reaction of TMA and the enzyme used to oxide TMA using cyclic voltammetry. For reference, we have obtained data from literature that determined that the standard potential cathodic and anodic peaks lie within −440±12 and −382±13 mV respectively (fig. 1)(Castrignanò et al., 2010). Oxygen is consumed at the electrode at –670mV in the presence of TMA and and hfmo3 (fig. 2) in the presence of TMA and hfmo3 (Castrignanò et al., 2010). In addition, we have also obtained a calibration curve that proves a significant difference in potential response between TMA and a control group (fig. 3) depicting a linear increase of voltage fluctuation up to 60 µmol of TMA (fig. 4) (Castrignanò et al., 2010). With this information we can assume that smaller concentrations of TMA while using a similar experimental model will also exemplify a linear relationship giving clear implications of its impact on the voltage potential. </p>
+    <p> figure 1 </p>
+    <center><img src="https://static.igem.wiki/teams/5064/hfmo3-cv-literature.webp" alt="figure 1" width="500" height="400"></center>
+    <p> figure 2 </p>
+    <center><img src="https://static.igem.wiki/teams/5064/tma-cv-reference-article.webp" alt="figure 2" width="500" height="400"></center>
+    <p> figure 3 </p>
+     <center><img src="https://static.igem.wiki/teams/5064/tma-cv-control.webp" alt="figure 3" width="500" height="400"></center>
+    <p> figure 4 </p>
+      <center><img src="https://static.igem.wiki/teams/5064/tma-cv-article-calibration-curve.webp" alt="figure 4" width="500" height="400"></center>
+    
+     
+
+
+      <p> Once the voltage potential of the experiment is established, steady state amperometry can used to measure how the current being applied by the potentiostat fluctuates in the presence of different TMA concentrations over a set period of time. The results of the fluctuations demonstrated through amperometry is imperative to understanding how our device should respond to different TMA concentration to enable a real-time monitoring experience that has been desired by current TMA patients. </p>
+
+        </div>
+  </section>
+
+<section id="section6" class="data-section">
+  <h2 class="data-section-title" onclick="toggleSection('content6')">Modeling TMA Concentration Using Amperometry </h2>
+  <div id="content6" class="data-content">
+
+    <p> To achieve the best chance of obtaining a real-time measurement of TMA, we used amperometry to test our TMA concentrations. Amperometry outputs an i-t graph which shows how the current density of the standard potential changes as different analyte concentrations are added to the solution being tested over time. With support from the data in literature, we can assume that a steady-state potential of –670 mV is the threshold to achieve a linear response with the TMA concentrations and hfmo3 being used in this experiment (Castrignanò et al., 2010). Every 30 seconds additional TMA was added to the solution having the total experiment last 3 minutes. This is to simulate the maximum time between patient samples if more TMA from the breath is needed to obtain a reading. The average change in the current density 4.09 µA. </p>
+    <center><img src="https://static.igem.wiki/teams/5064/tma-amperometry-model-final-1.webp" alt="Amperometry model" width="500" height="400"></center>
+
+  <p> We also conidered the Roseovarius sp. 217 and the M. aminisulfidivorans TMM. We created a comparative i-t graph to analzye the behavior of how TMA reacts with these two different enzymes.</p>
+   <center><img src="https://static.igem.wiki/teams/5064/corrected-comparison-response-in-nmoll-1.webp" alt="Amperometry comparative model" width="600" height="400"></center>
+
+
+</div>
+  </section>
+
+<section id="section7" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content7')">Device Modeling</h2>
+    <div id="content7" class="data-content">
+      
+<p> <strong> <u> EsperSense </u> </strong></p>
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+    <img src="https://static.igem.wiki/teams/5064/espersensedevicemodel-1.webp" alt="BiofetModel" width="230" height="300">
+    <img src="https://static.igem.wiki/teams/5064/espersensedevicemodelleftview-1.webp" alt="BiofetModel" width="130" height="300">
+    <img src="https://static.igem.wiki/teams/5064/espersensedevicemodelrightbackview.webp" alt="BiofetModel" width="230" height="300">
+</div>
+
+      <p> The device is designed to function as a breathalyzer. Inside the device contains our BIOFET that immobilizes our proteins so it will capture TMA molecules from the patient’s breath and other electrical components to provide a clear signal and interpret data.   </p> 
+      <p> <strong> <u> BIOFET Explanation </u> </strong></p>
+      <p> The BIOFET sensor system consists of several key components that work together to detect trimethylamine (TMA). The source and drain are made from n-doped and p-doped silicon, respectively, which allows for controlled current flow through the device. The gate, which contains a polymer matrix embedded with our biological recognition element trimethylamine monooxygenase (Tmm), plays a crucial role in the detection process. When TMA binds to Tmm, this interaction modulates the current flowing through the BIOFET circuit. An oxide layer, typically made from silicon dioxide (SiO2), insulates the gate while still allowing voltage variations to influence the    current, making the sensor sensitive to TMA levels.<p/>
+</div>
+  </section>
+
+<section id="section8" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content8')">BioFET Components</h2>
+    <div id="content8" class="data-content">
+      <p> <strong> (A) Source & Drain </strong> </p> 
+      <p> The source and drain, made from n-doped and p-doped silicon, respectively, allows for the controlled flow of current through the device. </p>
+      <p> <strong> (B) Gate (Polymer + Biological Component) </strong> </p>
+      <p> The gate contains a polymer matrix that supports Tmm, the biological recognition element. When TMA binds to Tmm, the interaction modulates the current flowing through the BIOFET circuit. 
+      <p> <strong> (C) Oxide Layer </strong> </p>
+      <p> The oxide layer, made from silicon dioxide (SiO2), insulates the gate while allowing voltage variations to affect the current flow. 
+<center><img src="https://static.igem.wiki/teams/5064/biofet-model.webp" alt="BiofetModel" width="473" height="280"></center>
+</div>
+  </section>
+
+<section id="section9" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content9')">Device Components</h2>
+    <div id="content9" class="data-content">
+      <p> <strong> <u> Component Selection </u></strong> </p>
+    <center><img src="https://static.igem.wiki/teams/5064/espersense-3dpcb.webp" alt="BiofetModel" width="390" height="300"></center>
+      <p> <strong> (A) Battery </strong> </p> 
+      <p> The device is powered by a 5V battery, providing sufficient energy to run the circuit and amplify the signals. </p>
+      <p> <strong> (B) LEDs </strong> </p> 
+      <p> LEDs are used to indicate TMA levels. </p> 
+<p>
+  <span style="color:green;">Green LED</span> = Very Low or No TMA Levels
+</p>
+<p>
+  <span style="color:yellow;">Yellow LED</span> = Be Cautious of TMA Levels
+</p>
+<p>
+  <span style="color:red;">Red LED</span> = High TMA Levels
+</p>
+      <p> <strong> (C) Arduino </strong> </p> 
+      <p> The Arduino microcontroller processes signals and activates the LEDs based on TMA thresholds detected by the BIOFET.</p>
+      <p> <strong> (D) Duckbill Valve (Breathing Tube) </strong> </p> 
+      <p> Ensures a one-way airflow from the patient for approximately 2-3 breaths, allowing around 1 liter of air to pass through, which prevents backflow and guarantees accurate sampling.</p>
+      <p> <strong> (E) AD620 Amplifer </strong> </p> 
+      <p> Amplifies the signal from the BIOFET for precise TMA concentration measurement. Where V<sub>out</sub> is the voltage output and V<sub>in</sub> is the is the voltage input and R<sub>Gain</sub> is the resistor that controls the amount of gain the amplifer can supply.</p>
+      <center><img src="https://static.igem.wiki/teams/5064/amplifer-equation.webp" alt="AD620 Amlifier Equation" width="271" height="94"></center>
+      <center><img src="https://static.igem.wiki/teams/5064/schematic-for-ad620.webp" alt="Schematic of an AD620 Amlifier" width="300  " height="225"></center>
+
+      <p> <strong> (F) Band-Pass Filters </strong> </p> 
+      <p> Used to filter out uncesscary frequencies, allowing only relevant signals to be processed by the Arduino. Where Z<sub>1</sub> represents the impedance provided from C and R, Z<sub>2</sub> represents the impedance provided from R<sub>1</sub> and C<sub>1</sub>, V<sub>out</sub> is the output voltage, V<sub>in</sub> is the input voltage, f<sub>cLP</sub> is the low pass corner frequency, and f<sub>cHP</sub> is the high pass corner frequency. </p>
+
+<center><img src="https://static.igem.wiki/teams/5064/bandpassfilter-equation.webp" alt="Band-Pass Filter Equation" width="433" height="123"></center>      
+<center><img src="https://static.igem.wiki/teams/5064/schematic-for-bandpass-filter.webp" alt="Band-Pass Filter Schematic" width="498  " height="262"></center>      
+
+      <p> <strong> (G) Flow Rate Sensor </strong> </p>
+      <p> Measures the volume of exhaled hair from the patient to ensure the device capture accurate readings. </p>
+      <p> <strong> (H) Bluetooth Module </strong> </p>
+      <p> Allows EsperSense to connect to a patient's phone so it can receive the data of the patient's TMA level. 
+ 
+ </div>
+  </section>
+
+<section id="section10" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content10')">Conclusions</h2>
+    <div id="content10" class="data-content">
+    <p>   The data derived from our predictive modeling could not be experimentally tested due to engineering challenges that we faced this cycle at this time. However, the data generated from our amperometry model suggests that there is a clear change and a positive correlation between the current density of a steady voltage potential and increasing concentrations of TMA. This is further supported by the results of the cyclic voltamettry tests of TMA provided by literature. Additionally, the concentration of TMA in our experiment is 3 orders of magnitude less than the amounts tested in literature. This is a reason as to why the current density of the y-axis on our i-t graph is much smaller than the values seen on the y-axis of the cyclic voltammograns. Nonetheless, these minuscule changes provide a lower threshold for our device to detect a significant change, which can prove to be beneficial in this case since the symptoms of TMAU are caused by trace amounts or slightly higher concentrations of TMA that can be picked up in the breath.
+  
+  Furthermore, The difference in enzyme efficiency between Roseovarius sp. 217 TMM and M. aminisulfidivorans TMM is primarily influenced by their Km​ and Vmax  values. Roseovarius sp. 217 has a higher Km​, indicating a lower affinity for TMA, but a significantly higher Vmax​, meaning it can process TMA much more rapidly when concentrations are high. In contrast, M. aminisulfidivorans exhibits a lower Km, reflecting a greater affinity for TMA at lower concentrations, but its lower Vmax limits its catalytic activity. As a result, Roseovarius sp. 217 is more efficient overall, particularly at higher TMA concentrations, while M. aminisulfidivorans is more effective at binding TMA in low concentrations but less capable of rapid catalysis. Thus, Roseovarius sp. 217 proves to be the more efficient enzyme under typical conditions due to its greater catalytic turnover.
+
+  
+As a result, we can hypothesize that the Rosevarius sp. 217 will be the most efficient enzyme to react with TMA when considering the minimum potential needed for the redox reaction to occur due to having the greatest V<sub>max</sub> out of all of our enzymes. This would support a faster monitoring system as TMA will react quicker, and also indicate an increase in current density as more TMA is added to the solution.
+  Lastly, we can hypothesize that M. aminisulfidivorans will be the most accurate enzyme for measuring TMA because of its extremely low K<sub>m</sub> value and its molecular docking score computed through the molecular docking simulation using autodock vina and smina, which showed to be the best among the rest of the enzymes.</p>
+
+    <p>The device modeling proved beneficial as it helps our patients understand the type of product they can expect from our research. Externally, the handheld device is portable, discreet, and provides immediate feedback on their TMA levels. The electronic components were instrumental in outlining which parts will be used to create a functional device for the future.  </p>
+</div>
+  </section>
+
+<section id="section11" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content11')">References</h2>
+    <div id="content11" class="data-content">
+     <p>[1] S. B. Adeloju, Encyclopedia of Analytical Science, 2nd ed. 2005. [Online]. Available: https://doi.org/10.1016/B0-12-369397-7/00012-1</p>
+     <p>[2] K. Ahern and I. Rajagopal, "5.2: Enzyme parameters," LibreTexts, 2020.</p>
+     <p>[3] K. Ahern and I. Rajagopal, "Enzyme Parameters," LibreTexts Chemistry. </p>
+     <p>[4] S. H. Arce, Bioinstrumentation Lab Companion: Capturing Biosignals, 1.2 ed., 2024.</>
+     <p>[5] P. M. Attia, "Cyclic voltammetry simulation," 2020. [Online]. Available: https://petermattia.com/cyclic_voltammetry_simulation/cvwebapp.html</p>
+     <p>[6] S. Castrignanò, S. J. Sadeghi, and G. Gilardi, "Electro-catalysis by immobilised human flavin-containing monooxygenase isoform 3 (hFMO3)," Anal. Bioanal. Chem., vol. 398, pp. 1403–1409, 2010. [Online]. Available: https://doi.org/10.1007/s00216-010-4014-z</p>
+  <p>[7] Y. Chen, N. A. Patel, A. Crombie, J. H. Scrivens, and J. C. Murrell, "Bacterial flavin-containing monooxygenase is trimethylamine monooxygenase," Proc. Natl. Acad. Sci., vol. 108, no. 43, pp. 17791–17796, 2011. [Online]. Available: https://doi.org/10.1073/pnas.1112928108</p>
+  <p>[8] E. J. Dickinson and A. J. Wain, "The Butler-Volmer equation in electrochemical theory: Origins, value, and practical application," J. Electroanal. Chem., vol. 872, p. 114145, 2020.</p>
+<p>[9] M. Kamran, Renewable Energy Conversion Systems, 2021.</p>
+<p>[10] T. Kissinger and W. R. Heineman, "Cyclic Voltammetry," J. Chem. Educ., vol. 60, p. 702, 1983. [Online]. Available: https://pubs.acs.org/doi/10.1021/ed060p702</p>
+<p>[11] D. R. Koes, M. P. Baumgartner, and C. J. Camacho, "Lessons learned in empirical scoring with smina from the CSAR 2011 benchmarking exercise," J. Chem. Inf. Model., vol. 53, no. 8, pp. 1893–1904, 2013. [Online]. Available: https://doi.org/10.1021/ci300604z</p>
+<p>[12] D. Lang, C. Yeung, R. Peter, C. Ibarra, R. Gasser, K. Itagaki, R. Philpot, and A. Rettie, "Isoform specificity of trimethylamine n-oxygenation by human flavin-containing monooxygenase (FMO) and P450 enzymes," Biochem. Pharmacol.,vol. 56, no. 8, pp. 1005–1012, 1998. [Online]. Available: https://doi.org/10.1016/s0006-2952(98)00218-4</p>
+<p>[13] G. Leftheriotis, S. Papaefthimiou, and P. Yianoulis, "Dependence of the estimated diffusion coefficient of LixWO3 films on the scan rate of cyclic voltammetry experiments," Solid State Ionics, vol. 178, no. 3-4, pp. 259–263, 2007.</p>
+<p>[14] J. D. Pleil, M. Ariel Geer Wallace, M. D. Davis, and C. M. Matty, "The physics of human breathing: flow, timing, volume, and pressure parameters for normal, on-demand, and ventilator respiration," J. Breath Res., vol. 15, no. 4, 2021. [Online]. Available: https://doi.org/10.1088/1752-7163/ac2589</p>
+<p>[15] R. W. Seabury and C. M. Stork, "Pharmacokinetic and toxicokinetic modeling," Reference Module in Biomedical Sciences, 2023. [Online]. Available: https://doi.org/10.1016/b978-0-12-824315-2.00797-1</p>
+<p>[16] S. Skariyachan and S. Garka, "Chapter 1- Exploring the binding potential of carbon nanotubes and fullerene towards major drug targets of multidrug resistant bacterial pathogens and their utility as novel therapeutic agents," William Andrew Publishing, pp. 1-29, 2018. [Online]. Available: https://doi.org/10.1016/B978-0-12-813691-1.00001-4</p>
+<p>[17] E. Souza, B. Ciribelli, and F. Colmati, "Nernst equation applied to electrochemical systems and centenary of his Nobel Prize in chemistry," Int. J. Innov. Educ. Res., vol. 8, pp. 670-683, 2020. [Online]. Available: https://doi.org/10.31686/ijier.vol8.iss11.2803</p>
+<p>[18] D. Sung and J. Koo, "A review of BioFET's basic principles and materials for biomedical applications," Biomed. Eng. Lett., vol. 11, no. 2, pp. 85–96, 2021. [Online]. Available: https://doi.org/10.1007/s13534-021-00187-8</p>
+<p>[19] O. Trott and A. J. Olson, "AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading," J. Comput. Chem., vol. 31, no. 2, pp. 455–461, 2010. [Online]. Available: https://doi.org/10.1002/jcc.21334</p>
+<p>[20] T. Windbacher, Engineering Gate Stacks for Field-Effect Transistors, 2010.</p>
+  </div>
+  </section>
+
+{% endblock %}

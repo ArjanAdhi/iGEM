@@ -1,0 +1,756 @@
+body { padding-top: 56px; }
+.left-aligned { margin-left: auto; }
+.bg-dark { background-color: #343a40 !important; }
+.bg-hero { background-color: #45b06cff; }
+
+/* CALLOUT */
+.bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
+.bd-callout h4 { margin-bottom:.25rem }
+.bd-callout p:last-child { margin-bottom:0 }
+.bd-callout code { border-radius:.25rem }
+.bd-callout+.bd-callout { margin-top:-.25rem }
+.bd-callout-info { border-left-color:#5bc0de }
+.bd-callout-warning { border-left-color:#f0ad4e }
+.bd-callout-danger { border-left-color:#d9534f }
+
+/* Navbar styling */
+
+.navbar {
+    background-color: #5d7654;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f3ede1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #808080;
+}
+
+.navbar .navbar-logo:hover {
+    background-color: inherit;
+    text-decoration: none;
+}
+
+.navbar .navbar-logo img {
+    height: 50px;
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(209, 203, 184, 0.5); /* Semi-transparent background */
+    color: #2c2c2c; /* Darker color for better readability */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar a:hover {
+    background-color: rgba(209, 203, 184, 0.7); /* Slightly transparent hover background */
+    color: #2c2c2c; /* Dark text color for better readability */
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #aaa;
+    color: #000000;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+.navbar-nav .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+body {
+    background-color: #f3ede1; /* Background color */
+    padding-top: 0px; /* Adjust to match the height of your navbar */
+}
+
+.banner {
+    background-color: #45583F !important; /* Match with your theme */
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem; /* Increased padding for better visibility */
+    padding-top: 120px;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.banner img {
+    max-width: 75%; /* Adjust the width of the image relative to the banner */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the banner */
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #5d7654; /* Match with your theme */
+}
+
+/* Center the cards and make sure they are responsive - Members */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: auto;
+    max-width: 960px; /* Adjust based on your card size and gap */
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #5d7654;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth height transition */
+    overflow: hidden; /* Allow smooth expansion */
+}
+
+.card-img-top {
+    border: 4px solid #5d7654;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    position: relative;
+    padding: 1rem;
+}
+
+.card-title {
+    color: #5d7654;
+}
+
+.card-text {
+    color: #000000;
+    min-height: 100px; /* Adjust as needed for consistent height */
+    white-space: normal; /* Ensure text wraps */
+}
+
+.more-text {
+    display: none; /* Initially hidden */
+    white-space: normal; /* Wrap text when revealed */
+    height: auto; /* Allow the expanded section to adjust */
+    overflow: hidden; /* Prevents breaking layout */
+    margin-top: 10px;
+}
+
+.expanded-section {
+    display: none; /* Initially hidden */
+}
+
+.read-more-btn {
+    background-color: #5d7654;
+    color: #ffffff;
+    border: none;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.read-more-btn:hover {
+    background-color: #4f6447; /* Darker shade for hover effect */
+}
+
+
+/* Footer Styling */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* Keep items in one row */
+    overflow: hidden; /* To smoothly hide the content */
+    max-height: 1000px; /* Large enough to show all content initially */
+    transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    visibility: visible;
+}
+
+#footer-content.collapsed {
+    max-height: 0;
+    visibility: hidden; /* Hides content but keeps the flex layout intact */
+}
+
+/* Sponsor Logos - Ensure the logos are in one row and scrollable */
+.sponsor-logos {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slide-track {
+    display: flex;
+    transition: transform 2s ease-in-out;
+    white-space: nowrap;
+}
+
+.logo {
+    display: inline-block;
+    margin: 5px;
+}
+
+.logo img {
+    max-width: 250px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        max-width: 100px; /* Make the logos smaller for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+/* Links and Contact Section - Keep links and contact side by side */
+.footer-links-contact {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links, .contact-details {
+    width: 50%; /* Split width between links and contact */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #5d7654;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Separator */
+.footer-separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: #5d7654;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive changes for mobile */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+    }
+
+    /* Sponsor logos move to the top */
+    .sponsor-logos {
+        order: -1; /* Move logos to the top */
+        width: 100%;
+        margin-bottom: 20px; /* Add some space below the logos */
+    }
+
+    /* Center the links and contact sections */
+    .footer-links-contact {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-links, .contact-details {
+        width: 100%; /* Full width for both sections */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    /* Ensure copyright stays at the bottom */
+    .footer-bottom {
+        order: 2; /* Keep at the bottom */
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* Home css */
+html {
+    height: 100%;
+    background-color: #f3ede1;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: inherit;
+}
+
+.navbar {
+    background-color: #5d7654;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f3ede1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar .navbar-logo img {
+    height: 50px;
+}
+
+.navbar a:hover {
+    background-color: #f3ede1;
+    color: #5d7654;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+.main-content {
+    padding-top: 60px;
+}
+
+.video-and-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.video-wrapper {
+    flex: 3;
+    max-width: 60%;
+    padding-right: 20px;
+}
+
+.video-info {
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 630px;
+    aspect-ratio: 16 / 9;
+}
+
+.info-section {
+    padding: 20px 0;
+    background-color: #D9D4C9;
+}
+
+.info-section .col {
+    padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .video-and-info {
+        flex-direction: column;
+        padding: 0;
+    }
+    .video-wrapper {
+        max-width: 100%;
+        padding-right: 0;
+    }
+    .video-info {
+        padding-left: 0;
+    }
+}
+
+.contact-section {
+    background-color: inherit;
+    padding: 20px 0;
+    text-align: left;
+}
+
+.contact-section .container {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: right;
+}
+
+.contact-section h6 {
+    margin-bottom: 10px;
+    color: #5d7654;
+    display: block;
+}
+
+.contact-section p {
+    color: #000000;
+    display: block;
+    margin: 0;
+}
+
+
+/* Generic css (modeling, engineering, etc */
+/* Banner Section */
+.data-banner {
+    background-color: #4f6447;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    padding-top: 120px;
+}
+
+/* Key Navigation for Sections */
+/* Key Navigation for Sections */
+.data-key-container {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    width: 200px;
+    background-color: #5d7654;
+    padding: 20px;
+}
+
+.data-section-key {
+    list-style-type: none;
+    padding: 0;
+}
+
+.data-section-key li {
+    margin-bottom: 10px;
+}
+
+.data-section-key a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.data-section-key a:hover {
+    text-decoration: underline;
+}
+
+/* Adjusted centering of sections */
+.data-main-content {
+    margin: 0 auto;  /* Horizontal centering */
+    padding: 20px;
+    max-width: 960px; /* Adjust based on your needs */
+    text-align: center;  /* Center text inside */
+}
+
+/* Key Navigation for Sections */
+.data-key-container {
+    position: fixed;
+    top: 150px;
+    left: 0; /* Removed the gap to align it to the left */
+    width: 150px; /* Reduced width for better balance */
+    background-color: #5d7654;
+    padding: 20px;
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.1); /* Added shadow for better aesthetics */
+}
+
+.data-section {
+    margin-bottom: 2rem;
+    text-align: center;  /* Ensure the sections' content is also centered */
+}
+
+.data-section-title {
+    cursor: pointer;
+    color: #5d7654;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.data-section-title:hover {
+    color: #4CAF50; /* Highlight on hover */
+}
+
+/* Content starts full width */
+.data-content {
+    display: block; /* Block element to fill width */
+    width: 100%; /* Start out as wide as the container */
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #5d7654;
+    border-radius: 5px;
+    transition: all 0.5s ease; /* Smooth transition for width/expansion */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    text-align: left;
+}
+
+/* Expanded content */
+.data-section.open .data-content {
+    width: 100%; /* Fully expanded width */
+    max-height: 100%; /* Full height of content */
+    padding: 15px; /* Maintain padding */
+}
+
+
+/* Timeline css */
+#arrow-indicator {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font-size: 60px;
+    color: #CEB888; /* Color of the arrow */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Black outlines */
+}
+
+#hover-panel:hover #arrow-indicator {
+    transform: translateY(-50%) translateX(-10px); /* Slight movement to indicate hover interaction */
+    color: #B8A078; /* Hover color change */
+}
+
+/* Timeline Styling */
+#timeline {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    border-left: 2px solid black; /* Central vertical timeline */
+    width: 2px;
+}
+
+/* Pagination Container for Different Pages */
+.pagination-container {
+    padding: 10px;
+    width: 60%; /* Centered container */
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+.page {
+    min-height: 70vh; /* Each page takes 70% of viewport height */
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+
+
+
+
+/*  Ava Safety CSS */
+
+/* Scoped only to the CD Animation page */
+.cd-banner-page {
+    height: 100vh;  /* Full height */
+    width: 100vw;   /* Full width */
+    background: linear-gradient(135deg, #004d00, #00cc00); /* Green gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's width and height */
+}
+
+/* Container for title and image, fully centered */
+.cd-banner-page .container-title {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  /* Stack title and image */
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+}
+
+/* Styling for the title */
+.cd-banner-page h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    z-index: 1;
+    margin: 0;
+}
+
+/* Bouncing Image */
+.cd-banner-page img#bouncing-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+    z-index: 0;
+}
+
+/* Reset any possible body and html margins or padding */
+.cd-banner-page body, .cd-banner-page html {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Timeline */
+
+
+/* Style for the timeline hover panel */
+#hover-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20px; /* Width of the hover area */
+    height: 100%;
+    background-color: transparent; /* Transparent but interactive */
+    z-index: 1000; /* Ensure it's on top */
+}
+
+/* Style for the expandable timeline box */
+#expandable-box {
+    position: fixed;
+    top: 0;
+    right: -200px; /* Hidden initially */
+    width: 200px; /* Width of the expanded box */
+    height: 100%;
+    background-color: #CEB888; /* Box background color */
+    transition: right 0.3s ease; /* Smooth sliding */
+    z-index: 999; /* Ensure it's behind the hover panel */
+}
+
+/* Arrow that indicates the timeline can be expanded */
+#arrow-indicator {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font-size: 60px; /* Large size for visibility */
+    color: #CEB888; /* Arrow color */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Timeline hover panel hover effect */
+#hover-panel:hover #arrow-indicator {
+    transform: translateY(-50%) translateX(-10px); /* Move arrow on hover */
+    color: #B8A078; /* Change color on hover */
+}
+
+/* Style for the timeline itself */
+#timeline {
+    position: absolute;
+    left: 50%; /* Centered vertically */
+    top: 0;
+    bottom: 0;
+    border-left: 2px solid black; /* Timeline line */
+    width: 2px;
+    z-index: 998; /* Ensure it's below the hover panel */
+}
+
+/* Notch and label style on the timeline */
+#timeline a {
+    display: block;
+    position: absolute;
+    left: -15px;
+    width: 10px;
+    height: 2px;
+    background-color: black;
+}
+
+#timeline span {
+    display: block;
+    position: absolute;
+    left: -35px;
+    color: black;
+    font-size: 12px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding: 20px;
+}
+
+/* Styling for the pages with PDF viewer */
+
+.pdf-container {
+    padding: 100px 20px 20px 20px;
+}
+
+/* Styling for the home page video */
+
+.video-container {
+    padding-top: 100px;
+    /* position: relative;
+    padding-bottom: 56.25%; 16:9 aspect ratio
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; */
+}
+.video-container iframe {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+}
+
+.footer-div {
+    padding: 10px 10px 10px 10px;
+}
+
+

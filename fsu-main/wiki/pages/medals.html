@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block title %}Biological Parts{% endblock %}
+
+{% block page_content %}
+<!-- Banner Section -->
+<div class="data-banner">
+  <h1>Data Overview</h1>
+</div>
+
+<!-- Left-hand Key for Sections -->
+<div class="data-key-container">
+  <ul class="data-section-key">
+    <li><a href="#section1">Bronze </a></li>
+    <li><a href="#section2">Silver </a></li>
+    <li><a href="#section3">Gold </a></li>
+  </ul>
+</div>
+
+<!-- Main Content Area -->
+<div class="data-main-content">
+  <section id="section1" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content1')">Bronze</h2>
+    <div id="content1" class="data-content">
+      <p> <strong>Project Attributions:</strong>We used the standardized form to outline the contributions of our team and the work done by others on our project.</p>
+      <p> <strong>Description:</strong> On our project description page, we explained the reasoning behind our project selection and the process we followed.</p>
+      <p> <strong>Project Deliverables:</strong> We have delivered a project promotional video, presentation video, judging form and a wiki. We look forward to our judging session in November!</p>
+      <p> <strong>Project Contributions:</strong> We updated the documentation for an existing part on the Part Registry page and enhanced a software tool by adding curated SBOL tutorial videos.</p>
+    </div>
+  </section>
+
+  <section id="section2" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content2')">Silver</h2>
+    <div id="content2" class="data-content">
+      <p> <strong>Engineering Sucess:</strong> We adhered to the phases of the engineering design cycle. You can find our complete methodology on the Engineering Success page of our wiki!</p>
+      <p> <strong>Human Practices:</strong> We detailed how our work contributes positively and responsibly to the world.</p>
+    </div>
+  </section>
+
+  <section id="section3" class="data-section">
+    <h2 class="data-section-title" onclick="toggleSection('content3')">Gold</h2>
+    <div id="content3" class="data-content">
+      <p> <strong>Human Practices:</strong> We selected Human Practices as one of our special awards because we believe we exceeded expectations in documenting our thoughtful and innovative approach to developing EsperSense. Our team genuinely feels that our project is beneficial and responsible, addressing the needs of a community in need Our Human Practices methodology involved engaging with stakeholders and refining our designs based on those discussions. Additionally, we met with patients who reached out to share their experiences with TMAU.Our Human Practices 'Overview' page narrates the journey of our project and highlights the positive impact we aim to make for the TMAU community, as well as the hope we seek to instill in TMAU patients. Likewise, our Human Practices Timeline details these stakeholder and patient meetings, illustrates the learning experiences our team underwent, and explains how these encounters influenced the trajectory of our project</p>
+      <p> <strong>Entrepreneurship:</strong>Our entrepreneurship report stands as a testament to collaborative innovation,highlighting our engagement with a wide range of key stakeholders from academia, industry, medicine, and especially TMAU patients. This diverse array of perspectives offered invaluable insights that allowed us to develop an entrepreneurial plan focused on serving an underserved community.At the heart of our strategy is a patient-centric approach, ensuring that our methods are not only technologically feasible but also deeply compassionate. What distinguishes us is our steadfast commitment to both feasibility and scalability; our plan for EsperSense is not merely an aspirational idea but a clearly defined roadmap for success. Additionally, we have embraced innovative solutions alongside ethical and sustainable entrepreneurial practices.The report provides a thorough business model, an extensive financial analysis, and strategic partnerships, all aimed at propelling our project forward. Central to our efforts is a strong alignment with our mission and values, which reflects our dedication to creating a tangible impact in the real world. By clearly articulating our innovative strategy, we emphasize the unique strengths that position us for success in addressing TMAU and potentially many other rare diseases in the future. </p>
+      <p><strong>Model:</strong>We selected the model as our general biological engineering special prize because it facilitated the design of a device capable of detecting trimethylamine (TMA) through breath analysis. This model incorporates verified data, equations, and assumptions from existing literature, significantly enhancing its validity. Furthermore, it has provided the entire team with a deeper understanding of the challenges associated with detecting trimethylamine by demonstrating a clear change and a positive correlation between the current density at a steady voltage potential and increasing concentrations of TMA.</p>
+    </div>
+  </section>
+
+</div>
+{% endblock %}
